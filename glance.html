@@ -1,0 +1,458 @@
+
+
+<html><head><title>
+Towards Electronic Persistence Using ARK Identifiers
+</title></head>
+<style type="text/css">
+body { margin-left: 4%; margin-right: 4%; }
+</style>
+<body bgcolor=white><center>
+<p>&nbsp;</p><a name="p0">&nbsp;</a>
+<h1>Towards Electronic Persistence Using ARK Identifiers</h1>
+
+<h3>
+California Digital Library<br>
+<br>
+John A. Kunze, jak@ucop.edu
+</h3>
+
+</center>
+
+	<hr>
+	<h2> Contents of Presentation</h2>
+	<h3><ul>
+	<li><a href="#p0"> Persistent Identifiers at First Glance</a><p>
+	<li><a href="#p1"> Tangled Terminology</a><p>
+	<li><a href="#p2"> Persistence Aside, What about Complete Identification?</a><p>
+	<li><a href="#p3"> Persistent Identifiers at Second Glance <small>(adding what we've learned)</small></a><p>
+	<li><a href="#p4"> So What If Some URLs Break?</a><p>
+	<li><a href="#p5"> Setting User Expectations</a><p>
+	<li><a href="#p6"> Who is Breaking URLs</a><p>
+	<li><a href="#p7"> Persistent Identifiers at Third Glance <small>(again adding what we've learned)</small></a><p>
+	<li><a href="#p8"> The Archival Resource Key (ARK) Scheme</a><p>
+	<li><a href="#p9"> ARKs in Action</a><p>
+	<li><a href="#p10"> Persistent Identifiers at the California Digital Library (CDL)</a><p>
+	<li><a href="#p11"> ARK Summary</a><p>
+	<li><a href="#p12"> Postscriptum</a><p>
+	</ul></h3>
+	<hr>
+
+
+
+<p>&nbsp;</p><a name="p1">&nbsp;</a>
+<h1> Persistent Identifiers at First Glance</h1>
+<ul>
+  <li><h2> Goal: long-term identifiers</h2>
+  <li><h2> Problem: URLs break</h2>
+  <li><h2> Why URLs break: because objects are moved, removed, or replaced</h2>
+  <li><h2> Conventional hypothesis: use indirect names (PURLs, URNs, Handles) instead; what worked for DNS should work for digital object references</h2>
+<ul>
+    <li><h2> [ <i>The DNS (Domain Name System) is what allows us to say www.library.ucsf.edu instead of 128.218.39.5.</i> ]</h2>
+</ul>
+  <li><h2> Why aren't we done yet?</h2>
+</ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> First | <a href="#p2">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p2">&nbsp;</a>
+<h1> Tangled Terminology</h1>
+<ul>
+  <li><h2> Persistent identifiers? But we have them: ISBN, LCCN, ...</h2>
+<ul>
+    <li><h2> no - we really mean <i>actionable</i> persistent identifiers</h2>
+</ul>
+  <li><h2> "Actionable" means we have widely available tools that, given an identifier, take us close to the object (e.g., within 0 or 1 clicks, or to a password challenge)</h2>
+  <li><h2> What's an identifier (as opposed to a mere string of data)?</h2>
+<ul>
+    <li><h2> 1L039G81U -- is this an identifier?</h2>
+    <li><h2> http://www.cdlib.edu/staff/~greenstein -- is this an identifier?</h2>
+</ul>
+  <li><h2> An identifier is not a string, but an <i>association</i> between a string and an object</h2>
+<ul>
+    <li><h2> now it makes sense to say "an identifier that breaks"</h2>
+</ul>
+  <li><h2> By the way, URLs are locators, <i>not locations</i></h2>
+<ul>
+    <li><h2> http://ntsrvr2.abc.org/docsfolder/version3.htm -- not even this one</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p1">Previous</a> | <a href="#p3">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p3">&nbsp;</a>
+<h1> Persistence Aside, What about Complete Identification?</h1>
+<ul>
+  <li><h2> How do you know if you have an identifier at all?</h2>
+<ul>
+    <li><h2> only if a provider can vouch for an association</h2>
+</ul>
+  <li><h2> What constitutes proof depends on how picky you need to be; examples</h2>
+<ul>
+    <li><h2> "click on it" returns something, anything at all</h2>
+    <li><h2> there exists a metadata record that one can compare to a delivered object to decide if it is the requested object</h2>
+</ul>
+  <li><h2> In general, inspection and comparison are called for</h2>
+<ul>
+    <li><h2> this requires a provider-supplied metadata receipt or manifest</h2>
+    <li><h2> it always helps in the comparison process if the identifier in the metadata record is visible right on the returned object</h2>
+</ul>
+  <li><h2> Providers who cannot supply a metadata record...</h2>
+<ul>
+    <li><h2> how well do you trust their ability to manage their objects at all?</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p2">Previous</a> | <a href="#p4">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p4">&nbsp;</a>
+<h1> Persistent Identifiers at Second Glance <small>(adding what we've learned)</small></h1>
+<ul>
+  <li><h2> Goal: long-term <i>actionable</i> identifiers</h2>
+<ul>
+    <li><h2> <i>Requirement: that identifiers deliver you to objects (where feasible)</i></h2>
+    <li><h2> <i>Requirement: that identifiers deliver you to object metadata</i></h2>
+    <li><h2> <i>Desirable: each object should wear its own identifier</i></h2>
+</ul>
+  <li><h2> Problem: URLs break <i>(that is, associations between URLs and objects are not maintained)</i></h2>
+  <li><h2> Why URLs break: because objects are moved, removed, or replaced</h2>
+  <li><h2> Conventional hypothesis: use indirect names (PURLs, URNs, Handles) instead; what worked for DNS should work for digital object references.</h2>
+  <li><h2> Why aren't we done yet?</h2>
+</ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p3">Previous</a> | <a href="#p5">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p5">&nbsp;</a>
+<h1> So What If Some URLs Break?</h1>
+<ul>
+  <li><h2> Providers rarely promise they won't</h2>
+<ul>
+    <li><h2> and many URLs really <i>should</i> break, especially if it costs anything to maintain the associations that they represent</h2>
+</ul>
+  <li><h2> How to indicate the suggestion of a promise</h2>
+<ul>
+    <li><h2> typically with a distinct literal marker string</h2>
+    <li><h2> e.g., "purl", "doi:", "urn:", or "ark:"</h2>
+</ul>
+  <li><h2> But promises aren't simple binary yes/no statements; instead they are faceted statements, including dimensions such as</h2>
+<ul>
+    <li><h2> how long the identifier (association) will be valid</h2>
+    <li><h2> how long the object (access) will be available</h2>
+    <li><h2> how invariant its content is (e.g., subject to revision)</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p4">Previous</a> | <a href="#p6">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p6">&nbsp;</a>
+<h1> Setting User Expectations</h1>
+<ul>
+  <li><h2> No general way for users to tell durable URLs from fragile URLs</h2>
+<ul>
+    <li><h2> best prediction is based on who made what promise</h2>
+</ul>
+  <li><h2> Providers of persistent identification play two main roles</h2>
+<ul>
+    <li><h2> name assigning authority (initial assignment)</h2>
+    <li><h2> name mapping authorities (to objects and metadata)</h2>
+</ul>
+  <li><h2> Making a persistence commitment known...</h2>
+<ul>
+    <li><h2> a marker string (purl, doi:, urn:, ark:) is not enough</h2>
+    <li><h2> identifier must deliver you to a multi-faceted promise</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p5">Previous</a> | <a href="#p7">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p7">&nbsp;</a>
+<h1> Who is Breaking URLs</h1>
+<ul>
+  <li><h2> Passive voice alert: associations don't break on their own</h2>
+<ul>
+    <li><h2> providers break them neglectfully or deliberately</h2>
+    <li><h2> changing identifier syntax won't fix the breakage, because an organization that doesn't maintain indirection tables now (HTTP redirects) does not spontaneously become the kind of organization that does</h2>
+    <li><h2> DOI/URN/PURL indirection tables are ripe for similar neglect</h2>
+</ul>
+  <li><h2> Most providers neglect URL redirection tables now</h2>
+<ul>
+    <li><h2> because they don't care or can't afford persistence</h2>
+</ul>
+  <li><h2> Persistence is for the stalwart few, and for only a few of their objects</h2>
+  <li><h2> Persistence is purely a matter of service and luck</h2>
+<ul>
+    <li><h2> what's left is to link would-be users to basic persistence services</h2>
+    <li><h2> there are no guarantees in life, but we can help users make up their minds</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p6">Previous</a> | <a href="#p8">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p8">&nbsp;</a>
+<h1> Persistent Identifiers at Third Glance <small>(again adding what we've learned)</small></h1>
+<ul>
+  <li><h2> Goal: long-term actionable identifiers</h2>
+<ul>
+    <li><h2> Requirement: that identifiers deliver you to objects (where feasible)</h2>
+    <li><h2> Requirement: that identifiers deliver you to object metadata</h2>
+    <li><h2> Desirable: each object should wear its own identifier</h2>
+    <li><h2> <i>Requirement: that identifiers deliver you to statements of commitment</i></h2>
+</ul>
+  <li><h2> Problem: URLs break <i>for some objects</i> (that is, associations between URLs and objects are not maintained) <i>and we have no way to tell which ones will or won't break.</i></h2>
+  <li><h2> Why URLs break: because objects are moved, removed, or replaced <i>- completely normal activities - and the provider in each case demonstrates insufficient commitment to update indirection tables, and/or to have planned identifier assignment carefully.  Persistence is in the mission of few organizations.</i></h2>
+  <li><h2> Conventional hypothesis: use indirect names (PURLs, URNs, Handles) instead; what worked for DNS should work for digital object references. <i>Wrong. Indirection is spectacularly successful and elegant in DNS, but it's a side issue in the provision of digital object persistence.</i></h2>
+  <li><h2> Why aren't we done yet? <i>Because the service issues have not been squarely faced.</i></h2>
+<ul>
+    <li><h2> <i>This is what the California Digital Library is pursuing, using the ARK scheme.</i></h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p7">Previous</a> | <a href="#p9">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p9">&nbsp;</a>
+<h1> The Archival Resource Key (ARK) Scheme</h1>
+<ul>
+  <li><h2> ARK (Archival Resource Key) meets previously stated requirements and more</h2>
+  <li><h2> Anatomy of an ARK</h2>
+<p>
+<pre>
+<font size=+2>
+          http://foobar.zaf.org/ark:/13030/654xz321
+          \___________________/ \__/ \___/ \______/
+            (replaceable)        |     |      |
+                 |         ARK Label   |    Name (assigned by the NAA)
+                 |                     | 
+   Name Mapping Authority             Name Assigning Authority
+          Hostport (NMAH)              Number (NAAN)
+</font>
+</pre>
+</p>
+<ul>
+    <li><h2> after the web, the core identity remains -- ark:/NAAN/Name</h2>
+</ul>
+  <li><h2> NMA (Name Mapping Authority) makes an ARK actionable</h2>
+<ul>
+    <li><h2> identity-inert, disposable, brand-friendly booster rocket</h2>
+</ul>
+  <li><h2> NAAN (Name Assigning Authority Number) identifies CDL</h2>
+<ul>
+    <li><h2> prototype NAAN registry at National Library of Medicine</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p8">Previous</a> | <a href="#p10">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p10">&nbsp;</a>
+<h1> ARKs in Action</h1>
+<ul>
+  <li><h2> Services activated by appending '?' (description) or '??' (promise)</h2>
+<pre><font size=+2>
+          http://foobar.zaf.org/ark:/13030/654xz321?
+          http://foobar.zaf.org/ark:/13030/654xz321??
+</font></pre>
+<ul>
+    <li><h2> outputs are machine-readable and human-readable</h2>
+    <li><h2> automated probes of the 3 services can detect still-born ARKs</h2>
+    <li><h2> periods optionally reveal variants, slashes reveal containment</h2>
+</ul>
+  <li><h2> NMAH replacement algorithm modeled on URN resolver discovery service</h2>
+<ul>
+    <li><h2> uses existing NAPTR record in DNS</h2>
+    <li><h2> can be bootstrapped using a small, replicated, plain text file registry</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p9">Previous</a> | <a href="#p11">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p11">&nbsp;</a>
+<h1> Persistent Identifiers at the California Digital Library (CDL)</h1>
+<ul>
+  <li><h2> Principle 1: persistence is purely a matter of service</h2>
+<ul>
+    <li><h2> explore use of ARKs (PURLs for stuff outside CDL control)</h2>
+</ul>
+  <li><h2> Principle 2: remove recognizable semantics from identifiers</h2>
+<ul>
+    <li><h2> whether intended or not, semantic rot is a liability</h2>
+    <li><h2> still room for limited, identity-inert branding</h2>
+</ul>
+  <li><h2> Principle 3: identifier composition guidelines</h2>
+<ul>
+    <li><h2> apply check characters in generated ARKs</h2>
+    <li><h2> restrict character set to digits and non-vowels</h2>
+    <li><h2> don't generate more than two non-digits in a row</h2>
+    <li><h2> hyphens never generated, so received hyphens can safely be ignored</h2>
+    <li><h2> pseudo-random generation avoids "series semantics"</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p10">Previous</a> | <a href="#p12">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p12">&nbsp;</a>
+<h1> ARK Summary</h1>
+<ul>
+  <li><h2> A specially constructed URL encapsulating a globally unique identity</h2>
+<ul>
+    <li><h2> hostname as branded booster rocket that doesn't affect comparisons</h2>
+<pre><font size=+2>
+             http://foobar.zaf.org/ark:/12025/654xz321
+           http://sneezy.dopey.com/ark:/12025/654xz321
+                                   ark:/12025/654xz321
+</font></pre>
+    <li><h2> access not just to an object, but to its metadata and to a promise</h2>
+    <li><h2> promises are compound (not binary) statements</h2>
+    <li><h2> carries provider promises, not irrelevant promises from defunct namers</h2>
+</ul>
+  <li><h2> Complete technical specification:</h2>
+<ul>
+    <li><h2> http://www.ietf.org/internet-drafts/draft-kunze-ark-07.txt</h2>
+</ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p11">Previous</a> | <a href="#p13">Next</a> | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+
+<p>&nbsp;</p><a name="p13">&nbsp;</a>
+<h1> Postscriptum</h1>
+<ul>
+  <li><h2> What about these neat URLs doubling as ad hoc metadata containers?</h2>
+<p><pre><font size=+2>
+        http://ajpcell.physiology.org/cgi/content/full/278/2/C391
+</font></pre></p>
+<ul>
+    <li><h2> hard to give up, because they're authoritative too</h2>
+    <li><h2> but semantics are better in real metadata, tightly bound to the identifier</h2>
+    <li><h2> ... and it makes for identifiers that age and travel well</h2>
+</ul>
+  <li><h2> Tools under development</h2>
+<ul>
+    <li><h2> identifier generator service and open source software</h2>
+    <li><h2> packaged resolvers and binders</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</ul></ul></ul>
+
+<hr>
+<table width="100%">
+<tr>
+<td valign=center> <a href="#p11">Previous</a> | End | <a href="#p0">Contents</a> </td>
+<td align=right><h5>
+Towards Electronic Persistence Using ARK Identifiers<br>
+California Digital Library<br>
+John A. Kunze, jak@ucop.edu
+</h5></td>
+</tr>
+</table>
+</body></html>
