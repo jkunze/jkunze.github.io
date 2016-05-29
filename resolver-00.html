@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+  <title>The resolver.txt Collection Description File</title>
+
+  <style type="text/css" title="Xml2Rfc (sans serif)">
+  /*<![CDATA[*/
+	  a {
+	  text-decoration: none;
+	  }
+      /* info code from SantaKlauss at http://www.madaboutstyle.com/tooltip2.html */
+      a.info {
+          /* This is the key. */
+          position: relative;
+          z-index: 24;
+          text-decoration: none;
+      }
+      a.info:hover {
+          z-index: 25;
+          color: #FFF; background-color: #900;
+      }
+      a.info span { display: none; }
+      a.info:hover span.info {
+          /* The span will display just on :hover state. */
+          display: block;
+          position: absolute;
+          font-size: smaller;
+          top: 2em; left: -5em; width: 15em;
+          padding: 2px; border: 1px solid #333;
+          color: #900; background-color: #EEE;
+          text-align: left;
+      }
+	  a.smpl {
+	  color: black;
+	  }
+	  a:hover {
+	  text-decoration: underline;
+	  }
+	  a:active {
+	  text-decoration: underline;
+	  }
+	  address {
+	  margin-top: 1em;
+	  margin-left: 2em;
+	  font-style: normal;
+	  }
+	  body {
+	  color: black;
+	  font-family: verdana, helvetica, arial, sans-serif;
+	  font-size: 10pt;
+	  max-width: 55em;
+	  
+	  }
+	  cite {
+	  font-style: normal;
+	  }
+	  dd {
+	  margin-right: 2em;
+	  }
+	  dl {
+	  margin-left: 2em;
+	  }
+	
+	  ul.empty {
+	  list-style-type: none;
+	  }
+	  ul.empty li {
+	  margin-top: .5em;
+	  }
+	  dl p {
+	  margin-left: 0em;
+	  }
+	  dt {
+	  margin-top: .5em;
+	  }
+	  h1 {
+	  font-size: 14pt;
+	  line-height: 21pt;
+	  page-break-after: avoid;
+	  }
+	  h1.np {
+	  page-break-before: always;
+	  }
+	  h1 a {
+	  color: #333333;
+	  }
+	  h2 {
+	  font-size: 12pt;
+	  line-height: 15pt;
+	  page-break-after: avoid;
+	  }
+	  h3, h4, h5, h6 {
+	  font-size: 10pt;
+	  page-break-after: avoid;
+	  }
+	  h2 a, h3 a, h4 a, h5 a, h6 a {
+	  color: black;
+	  }
+	  img {
+	  margin-left: 3em;
+	  }
+	  li {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol p {
+	  margin-left: 0em;
+	  }
+	  p {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  pre {
+	  margin-left: 3em;
+	  background-color: lightyellow;
+	  padding: .25em;
+	  }
+	  pre.text2 {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f0f0f0;
+	  width: 69em;
+	  }
+	  pre.inline {
+	  background-color: white;
+	  padding: 0em;
+	  }
+	  pre.text {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  width: 69em;
+	  }
+	  pre.drawing {
+	  border-style: solid;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  padding: 2em;
+	  }
+	  table {
+	  margin-left: 2em;
+	  }
+	  table.tt {
+	  vertical-align: top;
+	  }
+	  table.full {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.headers {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.tt td {
+	  vertical-align: top;
+	  }
+	  table.full td {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.tt th {
+	  vertical-align: top;
+	  }
+	  table.full th {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.headers th {
+	  border-style: none none inset none;
+	  border-width: 1px;
+	  }
+	  table.left {
+	  margin-right: auto;
+	  }
+	  table.right {
+	  margin-left: auto;
+	  }
+	  table.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	  }
+	  caption {
+	  caption-side: bottom;
+	  font-weight: bold;
+	  font-size: 9pt;
+	  margin-top: .5em;
+	  }
+	
+	  table.header {
+	  border-spacing: 1px;
+	  width: 95%;
+	  font-size: 10pt;
+	  color: white;
+	  }
+	  td.top {
+	  vertical-align: top;
+	  }
+	  td.topnowrap {
+	  vertical-align: top;
+	  white-space: nowrap; 
+	  }
+	  table.header td {
+	  background-color: gray;
+	  width: 50%;
+	  }
+	  table.header a {
+	  color: white;
+	  }
+	  td.reference {
+	  vertical-align: top;
+	  white-space: nowrap;
+	  padding-right: 1em;
+	  }
+	  thead {
+	  display:table-header-group;
+	  }
+	  ul.toc, ul.toc ul {
+	  list-style: none;
+	  margin-left: 1.5em;
+	  margin-right: 0em;
+	  padding-left: 0em;
+	  }
+	  ul.toc li {
+	  line-height: 150%;
+	  font-weight: bold;
+	  font-size: 10pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  ul.toc li li {
+	  line-height: normal;
+	  font-weight: normal;
+	  font-size: 9pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  li.excluded {
+	  font-size: 0pt;
+	  }
+	  ul p {
+	  margin-left: 0em;
+	  }
+	
+	  .comment {
+	  background-color: yellow;
+	  }
+	  .center {
+	  text-align: center;
+	  }
+	  .error {
+	  color: red;
+	  font-style: italic;
+	  font-weight: bold;
+	  }
+	  .figure {
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 9pt;
+	  }
+	  .filename {
+	  color: #333333;
+	  font-weight: bold;
+	  font-size: 12pt;
+	  line-height: 21pt;
+	  text-align: center;
+	  }
+	  .fn {
+	  font-weight: bold;
+	  }
+	  .hidden {
+	  display: none;
+	  }
+	  .left {
+	  text-align: left;
+	  }
+	  .right {
+	  text-align: right;
+	  }
+	  .title {
+	  color: #990000;
+	  font-size: 18pt;
+	  line-height: 18pt;
+	  font-weight: bold;
+	  text-align: center;
+	  margin-top: 36pt;
+	  }
+	  .vcardline {
+	  display: block;
+	  }
+	  .warning {
+	  font-size: 14pt;
+	  background-color: yellow;
+	  }
+	
+	
+	  @media print {
+	  .noprint {
+		display: none;
+	  }
+	
+	  a {
+		color: black;
+		text-decoration: none;
+	  }
+	
+	  table.header {
+		width: 90%;
+	  }
+	
+	  td.header {
+		width: 50%;
+		color: black;
+		background-color: white;
+		vertical-align: top;
+		font-size: 12pt;
+	  }
+	
+	  ul.toc a::after {
+		content: leader('.') target-counter(attr(href), page);
+	  }
+	
+	  ul.ind li li a {
+		content: target-counter(attr(href), page);
+	  }
+	
+	  .print2col {
+		column-count: 2;
+		-moz-column-count: 2;
+		column-fill: auto;
+	  }
+	  }
+	
+	  @page {
+	  @top-left {
+		   content: "Internet-Draft"; 
+	  } 
+	  @top-right {
+		   content: "December 2010"; 
+	  } 
+	  @top-center {
+		   content: "Abbreviated Title";
+	  } 
+	  @bottom-left {
+		   content: "Doe"; 
+	  } 
+	  @bottom-center {
+		   content: "Expires June 2011"; 
+	  } 
+	  @bottom-right {
+		   content: "[Page " counter(page) "]"; 
+	  } 
+	  }
+	
+	  @page:first { 
+		@top-left {
+		  content: normal;
+		}
+		@top-right {
+		  content: normal;
+		}
+		@top-center {
+		  content: normal;
+		}
+	  }
+  /*]]>*/
+  </style>
+
+  <link href="#rfc.toc" rel="Contents"/>
+<link href="#rfc.section.1" rel="Chapter" title="1 Introduction"/>
+<link href="#rfc.section.1.1" rel="Chapter" title="1.1 Requirements Language"/>
+<link href="#rfc.section.2" rel="Chapter" title="2 The /resolver.txt file"/>
+<link href="#rfc.section.2.1" rel="Chapter" title="2.1 Location"/>
+<link href="#rfc.section.2.2" rel="Chapter" title="2.2 Format"/>
+<link href="#rfc.section.3" rel="Chapter" title="3 Meta-resolver support: prefix uniqueness and harvest control"/>
+<link href="#rfc.references" rel="Chapter" title="4 References"/>
+<link href="#rfc.references.1" rel="Chapter" title="4.1 Normative References"/>
+<link href="#rfc.references.2" rel="Chapter" title="4.2 Informative References"/>
+<link href="#rfc.authors" rel="Chapter"/>
+
+
+  <meta name="generator" content="xml2rfc version 2.5.1 - http://tools.ietf.org/tools/xml2rfc" />
+  <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+
+  <meta name="dct.creator" content="Juty, N. and J. Kunze" />
+  <meta name="dct.identifier" content="urn:ietf:id:draft-kunze-resolver-00" />
+  <meta name="dct.issued" scheme="ISO8601" content="2016-5-29" />
+  <meta name="dct.abstract" content="This document specifies /resolver.txt, a simple convention for a URL path and a set of YAML-encoded elements.  The elements describe a server (resolver) that responds to URLs containing identifiers assigned to collection objects.  " />
+  <meta name="description" content="This document specifies /resolver.txt, a simple convention for a URL path and a set of YAML-encoded elements.  The elements describe a server (resolver) that responds to URLs containing identifiers assigned to collection objects.  " />
+
+</head>
+
+<body>
+
+  <table class="header">
+    <tbody>
+    
+    	<tr>
+  <td class="left">Force11 Data Citation Working Group</td>
+  <td class="right">N. Juty</td>
+</tr>
+<tr>
+  <td class="left">Internet-Draft</td>
+  <td class="right">European Bioinformatics Institute</td>
+</tr>
+<tr>
+  <td class="left">Intended status: Informational</td>
+  <td class="right">J. Kunze</td>
+</tr>
+<tr>
+  <td class="left">Expires: November 30, 2016</td>
+  <td class="right">California Digital Library</td>
+</tr>
+<tr>
+  <td class="left"></td>
+  <td class="right">May 29, 2016</td>
+</tr>
+
+    	
+    </tbody>
+  </table>
+
+  <p class="title">The resolver.txt Collection Description File<br />
+  <span class="filename">draft-kunze-resolver-00</span></p>
+  
+  <h1 id="rfc.abstract">
+  <a href="#rfc.abstract">Abstract</a>
+</h1>
+<p>This document specifies /resolver.txt, a simple convention for a URL path and a set of YAML-encoded elements.  The elements describe a server (resolver) that responds to URLs containing identifiers assigned to collection objects.  </p>
+<h1 id="rfc.status">
+  <a href="#rfc.status">Status of This Memo</a>
+</h1>
+<p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
+<p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
+<p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
+<p>This Internet-Draft will expire on November 30, 2016.</p>
+<h1 id="rfc.copyrightnotice">
+  <a href="#rfc.copyrightnotice">Copyright Notice</a>
+</h1>
+<p>Copyright (c) 2016 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
+<p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
+
+  
+  <hr class="noprint" />
+  <h1 class="np" id="rfc.toc"><a href="#rfc.toc">Table of Contents</a></h1>
+  <ul class="toc">
+
+  	<li>1.   <a href="#rfc.section.1">Introduction</a></li>
+<ul><li>1.1.   <a href="#rfc.section.1.1">Requirements Language</a></li>
+</ul><li>2.   <a href="#rfc.section.2">The /resolver.txt file</a></li>
+<ul><li>2.1.   <a href="#rfc.section.2.1">Location</a></li>
+<li>2.2.   <a href="#rfc.section.2.2">Format</a></li>
+</ul><li>3.   <a href="#rfc.section.3">Meta-resolver support: prefix uniqueness and harvest control</a></li>
+<li>4.   <a href="#rfc.references">References</a></li>
+<ul><li>4.1.   <a href="#rfc.references.1">Normative References</a></li>
+<li>4.2.   <a href="#rfc.references.2">Informative References</a></li>
+</ul><li><a href="#rfc.authors">Authors' Addresses</a></li>
+
+
+  </ul>
+
+  <h1 id="rfc.section.1"><a href="#rfc.section.1">1.</a> Introduction</h1>
+<p id="rfc.section.1.p.1">Across the sciences and the humanities, scholars have traditions of collecting, curating, and citing research objects.  Discipline-specific, web-based collections (databases) have emerged, some of which are now indispensable parts of the research infrastructure; for example, <a href="#GenBank">GenBank</a> <cite title="NONE">[GenBank]</cite> in biomedicine.  There are many such collections -- over 500 in life sciences alone -- and in an increasingly inter-disciplinary world, it can be useful to leverage them with machine-readable and harvestable descriptions.  </p>
+<p id="rfc.section.1.p.2">Collections often have schemes (systems) of unique identifiers.  While schemes vary, the identifiers tend to be short strings (5-20 characters) and appear in scholary citations, and they only become actionable when appended to a collection-specific base URL.  There are thousands of such collections, and cross-collection linking requires bookmarking fragile URLs with embedded identifiers.  </p>
+<p id="rfc.section.1.p.3">To make such identifiers more robust while preserving their compact appearance, it would be useful to provide a well-known base URL that can redirect a scheme plus short identifier string to a scheme-specific (collection-specific) service.  </p>
+<p id="rfc.section.1.p.4">We define a "collection resolver" (or just "resolver") to be a web service that accepts URLs with embedded collection identifiers and responds with such things as object access and metadata.  By "meta-resolver" we mean a web server that can recognize enough about an incoming URL and redirect to one or more collection resolvers.  </p>
+<h1 id="rfc.section.1.1"><a href="#rfc.section.1.1">1.1.</a> Requirements Language</h1>
+<p id="rfc.section.1.1.p.1">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="#RFC2119">RFC 2119</a> <cite title="NONE">[RFC2119]</cite>.</p>
+<h1 id="rfc.section.2"><a href="#rfc.section.2">2.</a> The /resolver.txt file</h1>
+<p id="rfc.section.2.p.1">Here we specify an optional file that holds one or more collection descriptions.  </p>
+<h1 id="rfc.section.2.1"><a href="#rfc.section.2.1">2.1.</a> Location</h1>
+<p id="rfc.section.2.1.p.1">By convention, on any given web server the file resides at the URL path, "/resolver.txt", analogous to <a href="#robots.txt">robots.txt</a> <cite title="NONE">[robots.txt]</cite>.  This file is entirely optional and would only exist if a server administrator wished to expose it to the world.  The URL for the file is constructed by appending the above path to the hostname (and optional port), so for the server at www.example.com, the URL to access the file would be </p>
+<pre>
+    http://www.example.com/resolver.txt
+           </pre>
+<h1 id="rfc.section.2.2"><a href="#rfc.section.2.2">2.2.</a> Format</h1>
+<p id="rfc.section.2.2.p.1">The file is made machine readable using <a href="#YAML">YAML</a> <cite title="NONE">[YAML]</cite>.  Here is an example file containing one collection description.  </p>
+<pre>
+   prefix: pmid
+   access pattern: www.ncbi.nlm.nih.gov/pubmed/
+   full name: PubMed
+   contact: &lt;admin@example.org&gt;
+   description: PubMed is a service of the U.S. National Library of
+      Medicine that includes citations from MEDLINE and other life
+      science journals for biomedical articles back to the 1950s.
+   id pattern: ^\d+$
+   id normalization: RH        # removes any hyphens before resolving
+   test id: http://www.ncbi.nlm.nih.gov/pubmed/16333295
+           </pre>
+<p id="rfc.section.2.2.p.2">The general form of a collection description follows.  If there is more than one description, separate each with the YAML "---" delimiter.  </p>
+<pre>
+   prefix: &lt;unique string registered manually (next section)&gt;
+   access pattern: &lt;URL path with optional embedded $id&gt;
+     # if $id doesn't appear in the pattern, it will be appended
+     # prepend http(s) if provider requires, else retain user choice
+   contact: &lt;email address&gt;
+   full name: &lt;description of scheme/collection/shoulder&gt;
+   description: &lt;prose summary of scheme/collection and provider(s)&gt;
+   id pattern: &lt;regular expression, Perl compatible (pcre.org)&gt;
+   id normalization: &lt;string containing one or more of
+        RH    remove hyphens
+        2U    convert to upper case
+        2L    convert to lower case
+        4E    hex-encode (every 4 bits)
+        6E    base64-encode (every 6 bits)&gt;
+   test id: &lt;URL containing a test id, may be preceded by "HEAD "&gt;
+     # precede by HEAD if provider prefers it over a GET method test
+           </pre>
+<h1 id="rfc.section.3"><a href="#rfc.section.3">3.</a> Meta-resolver support: prefix uniqueness and harvest control</h1>
+<p id="rfc.section.3.p.1">This section describes one way to support a meta-resolver.  It requires that each collection be associated with an identifier scheme name -- the prefix string above -- that is unique among all scheme names known to the meta-resolver.  A registry mirrored at the following locations </p>
+<pre>
+     http://xxx.example.org/schemes.txt
+     http://yyy.example.com/schemes.txt
+           </pre>
+<p id="rfc.section.3.p.2">is used to maintain uniqueness.  It is a plain text file, each line of which contains a scheme name optionally followed by a URL from which to harvest a resolver.txt file.  If no URL is given, harvesting is suspended for that scheme.  Comment lines are introduced by '#'.  For example, </p>
+<pre>
+     foo http://zzz.example.net/resolver.txt
+     bar http://zzz.example.net/resolver.txt
+     zaf
+     #foo http://www.example.com/resolver.txt   old location of foo
+           </pre>
+<p id="rfc.section.3.p.3">shows three unique schemes, two of them with active harvesting.  To signal your desire to be registered and subject to daily harvesting, send an email to XXX@example.org with your proposed scheme name (prefix) and the location of your resolver.txt file.  Use that address to request any other changes in the scheme name, resolver.txt location, or to turn off harvesting.  [I guess with that URL, resolver.txt need not always be at the root of the web server --jak] </p>
+<p id="rfc.section.3.p.4">Once you have obtained an approved scheme name that is unique across the registry, use that name henceforth as the value of the prefix in your resolver.txt file.  For security reasons, while harvesting is active, any harvested resolver.txt file changes containing a scheme name differing from the one currently registered MUST be rejected as an exception.  Thus any changes to a registered prefix are to be negotiated by email.  </p>
+<h1 id="rfc.references"><a href="#rfc.references">4.</a> References</h1>
+<h1 id="rfc.references.1"><a href="#rfc.references.1">4.1.</a> Normative References</h1>
+<table>
+  <tbody>
+    <tr>
+      <td class="reference">
+        <b id="RFC2119">[RFC2119]</b>
+      </td>
+      <td class="top"><a>Bradner, S.</a>, "<a href="http://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>", BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="YAML">[YAML]</b>
+      </td>
+      <td class="top"><a>Ben-Kiki, O.</a>, <a>Clark, E.</a> and <a>I. Net</a>, "<a href="http://www.yaml.org/spec/1.2/spec.html">YAML Ain't Markup Language</a>", 2009.</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="rfc.references.2"><a href="#rfc.references.2">4.2.</a> Informative References</h1>
+<table>
+  <tbody>
+    <tr>
+      <td class="reference">
+        <b id="GenBank">[GenBank]</b>
+      </td>
+      <td class="top"><a>Benson, DA1.</a>, <a>Clark, K.</a>, <a>Karsch-Mizrachi, I.</a>, <a>Lipman, DJ.</a>, <a>Ostell, J.</a> and <a>EW. Sayers</a>, "<a href="http://www.ncbi.nlm.nih.gov/pubmed/23193287">GenBank</a>", 2006.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="robots.txt">[robots.txt]</b>
+      </td>
+      <td class="top"><a>www.robotstxt.org</a>, "<a href="http://www.robotstxt.org/robotstxt.html">A Standard for Robot Exclusion</a>", 1997.</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="rfc.authors">
+  <a href="#rfc.authors">Authors' Addresses</a>
+</h1>
+<div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Nick Juty</span> 
+	  <span class="n hidden">
+		<span class="family-name">Juty</span>
+	  </span>
+	</span>
+	<span class="org vcardline">European Bioinformatics Institute</span>
+	<span class="adr">
+	  <span class="vcardline">Wellcome Trust Genome Campus</span>
+
+	  <span class="vcardline">
+		<span class="locality">Cambridge</span>,  
+		<span class="region"></span>
+		<span class="code">CB10 1SD</span>
+	  </span>
+	  <span class="country-name vcardline">UK</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:juty@ebi.ac.uk">juty@ebi.ac.uk</a></span>
+
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">John Kunze</span> 
+	  <span class="n hidden">
+		<span class="family-name">Kunze</span>
+	  </span>
+	</span>
+	<span class="org vcardline">California Digital Library</span>
+	<span class="adr">
+	  <span class="vcardline">415 20th St, #406</span>
+
+	  <span class="vcardline">
+		<span class="locality">Oakland</span>,  
+		<span class="region">CA</span> 
+		<span class="code">94612</span>
+	  </span>
+	  <span class="country-name vcardline">USA</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:jak@ucop.edu">jak@ucop.edu</a></span>
+
+  </address>
+</div>
+
+</body>
+</html>
