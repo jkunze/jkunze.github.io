@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+  <title>Prefix-Based Collection Access</title>
+
+  <style type="text/css" title="Xml2Rfc (sans serif)">
+  /*<![CDATA[*/
+	  a {
+	  text-decoration: none;
+	  }
+      /* info code from SantaKlauss at http://www.madaboutstyle.com/tooltip2.html */
+      a.info {
+          /* This is the key. */
+          position: relative;
+          z-index: 24;
+          text-decoration: none;
+      }
+      a.info:hover {
+          z-index: 25;
+          color: #FFF; background-color: #900;
+      }
+      a.info span { display: none; }
+      a.info:hover span.info {
+          /* The span will display just on :hover state. */
+          display: block;
+          position: absolute;
+          font-size: smaller;
+          top: 2em; left: -5em; width: 15em;
+          padding: 2px; border: 1px solid #333;
+          color: #900; background-color: #EEE;
+          text-align: left;
+      }
+	  a.smpl {
+	  color: black;
+	  }
+	  a:hover {
+	  text-decoration: underline;
+	  }
+	  a:active {
+	  text-decoration: underline;
+	  }
+	  address {
+	  margin-top: 1em;
+	  margin-left: 2em;
+	  font-style: normal;
+	  }
+	  body {
+	  color: black;
+	  font-family: verdana, helvetica, arial, sans-serif;
+	  font-size: 10pt;
+	  max-width: 55em;
+	  
+	  }
+	  cite {
+	  font-style: normal;
+	  }
+	  dd {
+	  margin-right: 2em;
+	  }
+	  dl {
+	  margin-left: 2em;
+	  }
+	
+	  ul.empty {
+	  list-style-type: none;
+	  }
+	  ul.empty li {
+	  margin-top: .5em;
+	  }
+	  dl p {
+	  margin-left: 0em;
+	  }
+	  dt {
+	  margin-top: .5em;
+	  }
+	  h1 {
+	  font-size: 14pt;
+	  line-height: 21pt;
+	  page-break-after: avoid;
+	  }
+	  h1.np {
+	  page-break-before: always;
+	  }
+	  h1 a {
+	  color: #333333;
+	  }
+	  h2 {
+	  font-size: 12pt;
+	  line-height: 15pt;
+	  page-break-after: avoid;
+	  }
+	  h3, h4, h5, h6 {
+	  font-size: 10pt;
+	  page-break-after: avoid;
+	  }
+	  h2 a, h3 a, h4 a, h5 a, h6 a {
+	  color: black;
+	  }
+	  img {
+	  margin-left: 3em;
+	  }
+	  li {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol p {
+	  margin-left: 0em;
+	  }
+	  p {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  pre {
+	  margin-left: 3em;
+	  background-color: lightyellow;
+	  padding: .25em;
+	  }
+	  pre.text2 {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f0f0f0;
+	  width: 69em;
+	  }
+	  pre.inline {
+	  background-color: white;
+	  padding: 0em;
+	  }
+	  pre.text {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  width: 69em;
+	  }
+	  pre.drawing {
+	  border-style: solid;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  padding: 2em;
+	  }
+	  table {
+	  margin-left: 2em;
+	  }
+	  table.tt {
+	  vertical-align: top;
+	  }
+	  table.full {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.headers {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.tt td {
+	  vertical-align: top;
+	  }
+	  table.full td {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.tt th {
+	  vertical-align: top;
+	  }
+	  table.full th {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.headers th {
+	  border-style: none none inset none;
+	  border-width: 1px;
+	  }
+	  table.left {
+	  margin-right: auto;
+	  }
+	  table.right {
+	  margin-left: auto;
+	  }
+	  table.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	  }
+	  caption {
+	  caption-side: bottom;
+	  font-weight: bold;
+	  font-size: 9pt;
+	  margin-top: .5em;
+	  }
+	
+	  table.header {
+	  border-spacing: 1px;
+	  width: 95%;
+	  font-size: 10pt;
+	  color: white;
+	  }
+	  td.top {
+	  vertical-align: top;
+	  }
+	  td.topnowrap {
+	  vertical-align: top;
+	  white-space: nowrap; 
+	  }
+	  table.header td {
+	  background-color: gray;
+	  width: 50%;
+	  }
+	  table.header a {
+	  color: white;
+	  }
+	  td.reference {
+	  vertical-align: top;
+	  white-space: nowrap;
+	  padding-right: 1em;
+	  }
+	  thead {
+	  display:table-header-group;
+	  }
+	  ul.toc, ul.toc ul {
+	  list-style: none;
+	  margin-left: 1.5em;
+	  margin-right: 0em;
+	  padding-left: 0em;
+	  }
+	  ul.toc li {
+	  line-height: 150%;
+	  font-weight: bold;
+	  font-size: 10pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  ul.toc li li {
+	  line-height: normal;
+	  font-weight: normal;
+	  font-size: 9pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  li.excluded {
+	  font-size: 0pt;
+	  }
+	  ul p {
+	  margin-left: 0em;
+	  }
+	
+	  .comment {
+	  background-color: yellow;
+	  }
+	  .center {
+	  text-align: center;
+	  }
+	  .error {
+	  color: red;
+	  font-style: italic;
+	  font-weight: bold;
+	  }
+	  .figure {
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 9pt;
+	  }
+	  .filename {
+	  color: #333333;
+	  font-weight: bold;
+	  font-size: 12pt;
+	  line-height: 21pt;
+	  text-align: center;
+	  }
+	  .fn {
+	  font-weight: bold;
+	  }
+	  .hidden {
+	  display: none;
+	  }
+	  .left {
+	  text-align: left;
+	  }
+	  .right {
+	  text-align: right;
+	  }
+	  .title {
+	  color: #990000;
+	  font-size: 18pt;
+	  line-height: 18pt;
+	  font-weight: bold;
+	  text-align: center;
+	  margin-top: 36pt;
+	  }
+	  .vcardline {
+	  display: block;
+	  }
+	  .warning {
+	  font-size: 14pt;
+	  background-color: yellow;
+	  }
+	
+	
+	  @media print {
+	  .noprint {
+		display: none;
+	  }
+	
+	  a {
+		color: black;
+		text-decoration: none;
+	  }
+	
+	  table.header {
+		width: 90%;
+	  }
+	
+	  td.header {
+		width: 50%;
+		color: black;
+		background-color: white;
+		vertical-align: top;
+		font-size: 12pt;
+	  }
+	
+	  ul.toc a::after {
+		content: leader('.') target-counter(attr(href), page);
+	  }
+	
+	  ul.ind li li a {
+		content: target-counter(attr(href), page);
+	  }
+	
+	  .print2col {
+		column-count: 2;
+		-moz-column-count: 2;
+		column-fill: auto;
+	  }
+	  }
+	
+	  @page {
+	  @top-left {
+		   content: "Internet-Draft"; 
+	  } 
+	  @top-right {
+		   content: "December 2010"; 
+	  } 
+	  @top-center {
+		   content: "Abbreviated Title";
+	  } 
+	  @bottom-left {
+		   content: "Doe"; 
+	  } 
+	  @bottom-center {
+		   content: "Expires June 2011"; 
+	  } 
+	  @bottom-right {
+		   content: "[Page " counter(page) "]"; 
+	  } 
+	  }
+	
+	  @page:first { 
+		@top-left {
+		  content: normal;
+		}
+		@top-right {
+		  content: normal;
+		}
+		@top-center {
+		  content: normal;
+		}
+	  }
+  /*]]>*/
+  </style>
+
+  <link href="#rfc.toc" rel="Contents"/>
+<link href="#rfc.section.1" rel="Chapter" title="1 Introduction"/>
+<link href="#rfc.section.1.1" rel="Chapter" title="1.1 Requirements Language"/>
+<link href="#rfc.section.2" rel="Chapter" title="2 Compact identifiers"/>
+<link href="#rfc.section.3" rel="Chapter" title="3 The &quot;prefixes&quot; file"/>
+<link href="#rfc.section.3.1" rel="Chapter" title="3.1 Element: scheme"/>
+<link href="#rfc.section.3.2" rel="Chapter" title="3.2 Element: provider"/>
+<link href="#rfc.section.3.3" rel="Chapter" title="3.3 Element: redirect"/>
+<link href="#rfc.section.3.4" rel="Chapter" title="3.4 Element: registrant"/>
+<link href="#rfc.section.3.5" rel="Chapter" title="3.5 Element: test"/>
+<link href="#rfc.section.3.6" rel="Chapter" title="3.6 Element: title"/>
+<link href="#rfc.section.3.7" rel="Chapter" title="3.7 Element: normalize"/>
+<link href="#rfc.section.3.8" rel="Chapter" title="3.8 Element: more"/>
+<link href="#rfc.section.3.9" rel="Chapter" title="3.9 Element: note"/>
+<link href="#rfc.references" rel="Chapter" title="4 References"/>
+<link href="#rfc.references.1" rel="Chapter" title="4.1 Normative References"/>
+<link href="#rfc.references.2" rel="Chapter" title="4.2 Informative References"/>
+<link href="#rfc.authors" rel="Chapter"/>
+
+
+  <meta name="generator" content="xml2rfc version 2.5.1 - http://tools.ietf.org/tools/xml2rfc" />
+  <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+
+  <meta name="dct.creator" content="Juty, N. and J. Kunze" />
+  <meta name="dct.identifier" content="urn:ietf:id:draft-kunze-prefixes-00" />
+  <meta name="dct.issued" scheme="ISO8601" content="2016-6-8" />
+  <meta name="dct.abstract" content="This document specifies a " />
+  <meta name="description" content="This document specifies a " />
+
+</head>
+
+<body>
+
+  <table class="header">
+    <tbody>
+    
+    	<tr>
+  <td class="left">Force11 Data Citation Working Group</td>
+  <td class="right">N. Juty</td>
+</tr>
+<tr>
+  <td class="left">Internet-Draft</td>
+  <td class="right">European Bioinformatics Institute</td>
+</tr>
+<tr>
+  <td class="left">Intended status: Informational</td>
+  <td class="right">J. Kunze</td>
+</tr>
+<tr>
+  <td class="left">Expires: December 10, 2016</td>
+  <td class="right">California Digital Library</td>
+</tr>
+<tr>
+  <td class="left"></td>
+  <td class="right">June 8, 2016</td>
+</tr>
+
+    	
+    </tbody>
+  </table>
+
+  <p class="title">Prefix-Based Collection Access<br />
+  <span class="filename">draft-kunze-prefixes-00</span></p>
+  
+  <h1 id="rfc.abstract">
+  <a href="#rfc.abstract">Abstract</a>
+</h1>
+<p>This document specifies a <a href="#YAML">YAML</a> <cite title="NONE">[YAML]</cite> file that serves as an open registry of unique collection prefixes.  These prefixes can be used by meta-resolvers to redirect identifiers to appropriate collection resolvers.  </p>
+<h1 id="rfc.status">
+  <a href="#rfc.status">Status of This Memo</a>
+</h1>
+<p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
+<p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at http://datatracker.ietf.org/drafts/current/.</p>
+<p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
+<p>This Internet-Draft will expire on December 10, 2016.</p>
+<h1 id="rfc.copyrightnotice">
+  <a href="#rfc.copyrightnotice">Copyright Notice</a>
+</h1>
+<p>Copyright (c) 2016 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
+<p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (http://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
+
+  
+  <hr class="noprint" />
+  <h1 class="np" id="rfc.toc"><a href="#rfc.toc">Table of Contents</a></h1>
+  <ul class="toc">
+
+  	<li>1.   <a href="#rfc.section.1">Introduction</a></li>
+<ul><li>1.1.   <a href="#rfc.section.1.1">Requirements Language</a></li>
+</ul><li>2.   <a href="#rfc.section.2">Compact identifiers</a></li>
+<li>3.   <a href="#rfc.section.3">The "prefixes" file</a></li>
+<ul><li>3.1.   <a href="#rfc.section.3.1">Element: scheme</a></li>
+<li>3.2.   <a href="#rfc.section.3.2">Element: provider</a></li>
+<li>3.3.   <a href="#rfc.section.3.3">Element: redirect</a></li>
+<li>3.4.   <a href="#rfc.section.3.4">Element: registrant</a></li>
+<li>3.5.   <a href="#rfc.section.3.5">Element: test</a></li>
+<li>3.6.   <a href="#rfc.section.3.6">Element: title</a></li>
+<li>3.7.   <a href="#rfc.section.3.7">Element: normalize</a></li>
+<li>3.8.   <a href="#rfc.section.3.8">Element: more</a></li>
+<li>3.9.   <a href="#rfc.section.3.9">Element: note</a></li>
+</ul><li>4.   <a href="#rfc.references">References</a></li>
+<ul><li>4.1.   <a href="#rfc.references.1">Normative References</a></li>
+<li>4.2.   <a href="#rfc.references.2">Informative References</a></li>
+</ul><li><a href="#rfc.authors">Authors' Addresses</a></li>
+
+
+  </ul>
+
+  <h1 id="rfc.section.1"><a href="#rfc.section.1">1.</a> Introduction</h1>
+<p id="rfc.section.1.p.1">Across the sciences and the humanities, scholars have traditions of collecting, curating, and citing research objects.  These include articles, data files, tables, table rows, software, physical specimens, events, and vocabulary terms.  Discipline-specific, web-based object collections (eg, databases) have emerged, some of which are now indispensable parts of the research infrastructure; for example, <a href="#GenBank">GenBank</a> <cite title="NONE">[GenBank]</cite> in biomedicine.  There are many such collections -- over 500 in the life sciences alone -- and in an increasingly inter-disciplinary world, it can be useful to create common conventions for accessing objects across collections.  </p>
+<p id="rfc.section.1.p.2">It often not obvious how to take object identifiers that are locally unique within a collection and derive globally unique identifiers that are actionable from a web browser.  Each collection has its own scheme (syntax and assignment conventions) for its locally unique identifiers (LUIs).  While schemes vary, LUIs tend to be short strings (5-20 characters) that often appear in citations, prefixed with a string or acronym to identify the originating collection.  This sort of collection prefix plus LUI combination is a "compact identifier" familiar within disciplines that use the given collection.  The problem is that it is not easy for people from outside the discipline (researchers in different fields, or publishers spanning multiple domains) to interpret, understand, or access these cited objects.  Across all disciplines there are thousands of collections, each with its own specific and evolving way of constructing actionable identifiers (URLs) from LUIs.  </p>
+<p id="rfc.section.1.p.3">We define a "collection resolver" (or just "resolver") to be a web service that accepts URLs with embedded collection identifiers and responds with such things as object access and metadata.  By "meta-resolver" we mean a web server that can recognize enough about an incoming URL and redirect to one or more collection resolvers.  A meta-resolver can provide a single way to construct URLs from compact identifiers, namely, by appending the prefix plus LUI to the URL basename of the meta-resolver.  The meta-resolver that keeps track of the myriad collection resolver access methods can take an incoming resolution request, lookup the appropriate redirection rule (access method) based on the prefix, and transparently forward the request to the correct collection resolver.  This shields people from the details of and changes in collection resolver access methods, and makes it easy to associate compact citations with actionable hypertext links.  </p>
+<h1 id="rfc.section.1.1"><a href="#rfc.section.1.1">1.1.</a> Requirements Language</h1>
+<p id="rfc.section.1.1.p.1">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in <a href="#RFC2119">RFC 2119</a> <cite title="NONE">[RFC2119]</cite>.</p>
+<h1 id="rfc.section.2"><a href="#rfc.section.2">2.</a> Compact identifiers</h1>
+<p id="rfc.section.2.p.1">In this document a "compact identifier" is a string constructed through the concatenation of a scheme, a separating colon, and an LUI (an identifier locally unique in the collection designated by the scheme).  For example, </p>
+<pre>
+     pmid:16333295
+     pdb:2gc4
+     omim:603903 </pre>
+<p id="rfc.section.2.p.2">specifies three LUIs: 16333295 in the PubMed collection, 2gc4 in the Protein Data Bank archive, and 603903 in the Online Mendelian Inheritance in Man catalog.  When a collection has more than one provider, it is possible to prepend a short "provider code" and a "/".  For example, </p>
+<pre>
+     epmc/pmid:16333295
+     rcsb/pdb:2gc4
+     ebi/omim:603903 </pre>
+<p id="rfc.section.2.p.3">specifies three different preferred resolvers: Europe PubMed Central, the Research Collaboratory for Structural Bioinformatics, and the European Bioinformatics Institute.  </p>
+<p id="rfc.section.2.p.4">In summary, a "prefix" is thus either a scheme that may optionally be preceded by a provider code.  The "/" convention makes it easy to surface the primary collection (scheme) designator and forward requests to the requested resolver.  In the absence of a provider code, a meta-resolver will forward the query to an appropriate collection resolver.  The procedure by which the resolver selection is made should be documented by the meta-resolver.  </p>
+<h1 id="rfc.section.3"><a href="#rfc.section.3">3.</a> The "prefixes" file</h1>
+<p id="rfc.section.3.p.1">This section specifies an open "prefixes" registry of unique collection designators.  It is maintained as a text file in <a href="#YAML">YAML</a> <cite title="NONE">[YAML]</cite> format maintained in a github.com repository.  Additions, corrections, and deletions are requested via the github issue tracking mechanism.  It is made available for access and download at the URL, </p>
+<pre>
+  https://github.com/prefixcommons/prefixes/blob/master/registry.yaml </pre>
+<p id="rfc.section.3.p.2">The file consists of a sequence of "prefix records" in <a href="#YAML">YAML</a> <cite title="NONE">[YAML]</cite> format.  There should be a prefix record for each combination of scheme name and provider.  Here is an example of three records defining three prefixes (pmid, epmc/pmid, and flybase).  </p>
+<pre>
+     scheme: pmid
+     - redirect: http://www.ncbi.nlm.nih.gov/pubmed/$id
+     - test: 16333295
+     - more: http://www.ncbi.nlm.nih.gov/PubMed/
+     - registrant: dlipman
+     scheme: pmid
+     - provider: epmc
+     - redirect: http://europepmc.org/abstract/MED/$id
+     - test: 16333295
+     - more: http://europepmc.org/
+     - registrant: jkunze
+     scheme: flybase
+     - redirect: http://flybase.org/reports/$id.html
+     - test: FBgn0011293
+     - normalize: NH, 2U
+     - more: http://flybase.org/
+     - registrant: njuty </pre>
+<p id="rfc.section.3.p.3">The general layout of a "prefix record" is: </p>
+<pre>
+   scheme: &lt;required alphanumeric identifier scheme name&gt;
+   - provider: &lt;optional alphanumeric provider code&gt;
+   - redirect: &lt;required URL forwarding rule&gt;
+   - registrant: &lt;required github handle&gt;
+   - test: &lt;required test identifier&gt;
+   - title: &lt;optional full title of the prefix&gt;
+   - normalize: &lt;optional coded transformation rule&gt; [toss?]
+   - more: &lt;optional URL for access more information&gt;
+   - note: &lt;optional text statement&gt;
+   # comment lines introduced with '#' are allowed </pre>
+<p id="rfc.section.3.p.4">User resolution requests arrive at a meta-resolver as a prefix, a colon (":"), and an LUI.  As before, the prefix is either just a scheme or a scheme preceded by a provider code.  What happens next depends on individual prefix record elements described below.  </p>
+<h1 id="rfc.section.3.1"><a href="#rfc.section.3.1">3.1.</a> Element: scheme</h1>
+<p id="rfc.section.3.1.p.1">A string of lowercase letters and digits defining the identifier type, typically for a given collection or database.  The combination of scheme and provider (below) must be unique across the registry.  To indicate a deprecated scheme, end the string with the reserved substring, " - deprecated".  This element is required.  </p>
+<h1 id="rfc.section.3.2"><a href="#rfc.section.3.2">3.2.</a> Element: provider</h1>
+<p id="rfc.section.3.2.p.1">A string of lowercase letters and digits defining one provider for an identifier scheme.  The combination of scheme and provider (above) must be unique across the registry.  If this element is not present, only one provider is assumed.  To indicate a deprecated provider, end the string with the reserved substring, " - deprecated".  </p>
+<h1 id="rfc.section.3.3"><a href="#rfc.section.3.3">3.3.</a> Element: redirect</h1>
+<p id="rfc.section.3.3.p.1">A rule specified as a URL-like path defining how to forward compact identifiers to a specific provider.  If the literal string "$id" appears in the rule, the redirection target will be formed by replacing the "$id" with the LUI.  If no "$id" appears, the LUI will be appended.  Unless the rule begins with a fixed URI scheme (eg, "http:" or "https:"), the incoming resolution request's choice of URI scheme will be honored (preserved) in the forwarded request.  This element is required.  </p>
+<h1 id="rfc.section.3.4"><a href="#rfc.section.3.4">3.4.</a> Element: registrant</h1>
+<p id="rfc.section.3.4.p.1">The github login name of a person authorized to make changes for this scheme/provider combination, generally the person who requested it originally.  This element is required and may be repeated.  </p>
+<h1 id="rfc.section.3.5"><a href="#rfc.section.3.5">3.5.</a> Element: test</h1>
+<p id="rfc.section.3.5.p.1">A sample LUI that will be tested before any change to a "redirect" element will be approved (eg, by an automated process).  If the result of forwarding the LUI does not ultimately return an HTTP status code in the 200 range, a change in redirect will be denied.  This element is required.  </p>
+<h1 id="rfc.section.3.6"><a href="#rfc.section.3.6">3.6.</a> Element: title</h1>
+<p id="rfc.section.3.6.p.1">A text string containing the full name of the prefix.  This element is optional.  </p>
+<h1 id="rfc.section.3.7"><a href="#rfc.section.3.7">3.7.</a> Element: normalize</h1>
+<p id="rfc.section.3.7.p.1">A rule specified as a coded string with instructions for normalizing LUIs before forwarding.  An example string with three codes is "2U, NH,NS", which instructs a meta-resolver to convert to upper case and remove all hyphens and whitespace.  The defined codes are </p>
+<pre>
+        2U    convert to upper case
+        2L    convert to lower case
+        NH    remove hyphens
+        NS    remove whitespace
+        TR    trim just external whitespace
+        SS    squeeze multiple whitespace chars into one space
+        4E    hex-encode (every 4 bits)
+        6E    base64-encode (every 6 bits)&gt; </pre>
+<p id="rfc.section.3.7.p.2">This element is optional.  [ For simplicity I'm thinking it might be better to remove this element. --jak ] </p>
+<h1 id="rfc.section.3.8"><a href="#rfc.section.3.8">3.8.</a> Element: more</h1>
+<p id="rfc.section.3.8.p.1">A URL that leads to a web page with more information about the prefix.  If the page contains schema.org tags, the meta-resolver MAY exploit them for descriptive information.  This element is optional.  </p>
+<h1 id="rfc.section.3.9"><a href="#rfc.section.3.9">3.9.</a> Element: note</h1>
+<p id="rfc.section.3.9.p.1">A text string containing arbitrary annotations.  This element is optional and may be repeated.  </p>
+<h1 id="rfc.references"><a href="#rfc.references">4.</a> References</h1>
+<h1 id="rfc.references.1"><a href="#rfc.references.1">4.1.</a> Normative References</h1>
+<table>
+  <tbody>
+    <tr>
+      <td class="reference">
+        <b id="RFC2119">[RFC2119]</b>
+      </td>
+      <td class="top"><a>Bradner, S.</a>, "<a href="http://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>", BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997.</td>
+    </tr>
+    <tr>
+      <td class="reference">
+        <b id="YAML">[YAML]</b>
+      </td>
+      <td class="top"><a>Ben-Kiki, O.</a>, <a>Clark, E.</a> and <a>I. Net</a>, "<a href="http://www.yaml.org/spec/1.2/spec.html">YAML Ain't Markup Language</a>", 2009.</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="rfc.references.2"><a href="#rfc.references.2">4.2.</a> Informative References</h1>
+<table>
+  <tbody>
+    <tr>
+      <td class="reference">
+        <b id="GenBank">[GenBank]</b>
+      </td>
+      <td class="top"><a>Benson, DA1.</a>, <a>Clark, K.</a>, <a>Karsch-Mizrachi, I.</a>, <a>Lipman, DJ.</a>, <a>Ostell, J.</a> and <a>EW. Sayers</a>, "<a href="http://www.ncbi.nlm.nih.gov/pubmed/23193287">GenBank</a>", 2006.</td>
+    </tr>
+  </tbody>
+</table>
+<h1 id="rfc.authors">
+  <a href="#rfc.authors">Authors' Addresses</a>
+</h1>
+<div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Nick Juty</span> 
+	  <span class="n hidden">
+		<span class="family-name">Juty</span>
+	  </span>
+	</span>
+	<span class="org vcardline">European Bioinformatics Institute</span>
+	<span class="adr">
+	  <span class="vcardline">Wellcome Trust Genome Campus</span>
+
+	  <span class="vcardline">
+		<span class="locality">Cambridge</span>,  
+		<span class="region"></span>
+		<span class="code">CB10 1SD</span>
+	  </span>
+	  <span class="country-name vcardline">UK</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:juty@ebi.ac.uk">juty@ebi.ac.uk</a></span>
+
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">John Kunze</span> 
+	  <span class="n hidden">
+		<span class="family-name">Kunze</span>
+	  </span>
+	</span>
+	<span class="org vcardline">California Digital Library</span>
+	<span class="adr">
+	  <span class="vcardline">415 20th St, #406</span>
+
+	  <span class="vcardline">
+		<span class="locality">Oakland</span>,  
+		<span class="region">CA</span> 
+		<span class="code">94612</span>
+	  </span>
+	  <span class="country-name vcardline">USA</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:jak@ucop.edu">jak@ucop.edu</a></span>
+
+  </address>
+</div>
+
+</body>
+</html>
