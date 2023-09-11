@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": " John Andrew Kunze   ",
     "section": "",
-    "text": "John Kunze is a pioneer in the theory and practice of digital libraries. With a background in computer science and mathematics, he wrote BSD Unix software tools that come pre-installed with Mac and Linux systems. He created the ARK identifier scheme, the N2T.net scheme-agnostic resolver (which redirects over 600 kinds of CURIEs, or “compact identifiers”), and contributed heavily to the first standards for URLs (RFC1736, RFC1625, RFC2056), for library search and retrieval (Z39.50), for archival transfer (BagIt - RFC8493), for web archiving (WARC), and for metadata (RFC2413, RFC2731, ANSI/NISO Z39.85). His specs and tools for repository microservices – Pairtree, Namaste, ReDD, oxum, ERC/ANVL, TEMPER, THUMP – may be found in such places as the HathiTrust and OCFL. Follow-on work in metadata includes creation of the Dublin Kernel and Yamz.net. His current work focus is the ARK Alliance (arks.org), Yamz, and the DWeb."
+    "text": "John Kunze is a pioneer in the theory and practice of digital libraries. With a background in computer science and mathematics, he wrote BSD Unix software tools that come pre-installed with Mac and Linux systems. He created the ARK identifier scheme, the N2T.net scheme-agnostic resolver (which redirects over 600 kinds of CURIEs, or “compact identifiers”), and contributed heavily to the first standards for URLs (RFC1736, RFC1625, RFC2056), for library search and retrieval (Z39.50), for archival transfer (BagIt - RFC8493), for web archiving (WARC), and for metadata (RFC2413, RFC2731, ANSI/NISO Z39.85). His specs and tools for repository microservices – Pairtree, Namaste, ReDD, oxum, ERC/ANVL, TEMPER, THUMP – may be found in such places as the HathiTrust and OCFL. Follow-on work in metadata includes creation of the Dublin Kernel and YAMZ (Yet Another Metadata Zoo). His current work focus is the ARK Alliance (arks.org), YAMZ.net, and the DWeb. (extended bio …)"
   },
   {
     "objectID": "index.html#persistent-identifiers",
@@ -28,11 +28,11 @@
     "text": "Persistent Identifiers\n\nThe ARK Alliance\nLong-term identifiers made easy: EZID\nThe N2T (Name-to-Thing) Resolver: n2t.net  Low-cost, low-risk resolver discovery (ARKs, DOIs, et al), suffix passthrough, meta-resolving, and namespace splitting (2006 PPT slides)\n Persistence Statements: Describing Digital Stickiness \nARK Identifier Overview\n Towards Electronic Persistence Using ARK Identifiers (PDF)\n Noid (Nice Opaque Identifier) Minting and Binding Tool\n The ARK Identifier Scheme technical specification"
   },
   {
-    "objectID": "index.html#kernel-metadata-and-ercs",
-    "href": "index.html#kernel-metadata-and-ercs",
+    "objectID": "index.html#metadata",
+    "href": "index.html#metadata",
     "title": " John Andrew Kunze   ",
-    "section": "Kernel Metadata and ERCs",
-    "text": "Kernel Metadata and ERCs\n\n Kernel and ERC Specification; very simple metadata\n\n Kernel Community (within the Dublin Core Metadata Initiative)\n\n A Metadata Kernel for Electronic Permanence (PDF) published in the Journal of Digital Information Vol 2, Issue 2, October 2001\n The Dublin Core Metadata Element Set (August 2007)\n\n\n \n\n\nJohn A. Kunze           Selected Presentations   ARK Alliance – Ronin Institute  Twitter: @jakkbl  Mastodon"
+    "section": "Metadata",
+    "text": "Metadata\n\nYet Another Metadata Zoo (YAMZ, pronounced “yams”)\n Kernel and ERC Specification (very simple metadata);  Kernel Community (within the Dublin Core Metadata Initiative)\n A Metadata Kernel for Electronic Permanence (PDF) published in the Journal of Digital Information, Vol 2, Issue 2, October 2001\n The Dublin Core Metadata Element Set (August 2007)\n\n\n \n\n\nJohn A. Kunze         jkunze.net          Selected Presentations    ARK Alliance  |  Metadata Research Center, Drexel University  |  Ronin Institute  Mastodon: fosstodon.org/@jakkbl  Linkedin: jakkbl  |  X/Twitter: jakkbl  ORCID: 0000-0001-7604-8041"
   },
   {
     "objectID": "biography.html",
