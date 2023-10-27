@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jkunze.github.io/posts/post-with-code/index.html</loc>
-    <lastmod>2023-09-11T22:23:34.540Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jkunze.github.io/posts/welcome/index.html</loc>
-    <lastmod>2023-09-11T22:23:34.858Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jkunze.github.io/index.html</loc>
-    <lastmod>2023-09-11T22:23:35.197Z</lastmod>
+    <loc>https://jkunze.github.io/blog/index.html</loc>
+    <lastmod>2023-10-27T22:03:12.385Z</lastmod>
   </url>
   <url>
     <loc>https://jkunze.github.io/biography.html</loc>
-    <lastmod>2023-09-11T22:23:35.634Z</lastmod>
+    <lastmod>2023-10-27T22:03:11.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jkunze.github.io/posts/welcome/index.html</loc>
+    <lastmod>2023-10-27T22:03:10.889Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jkunze.github.io/posts/post-with-code/index.html</loc>
+    <lastmod>2023-10-27T22:03:10.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jkunze.github.io/index.html</loc>
+    <lastmod>2023-10-27T22:03:11.264Z</lastmod>
   </url>
   <url>
     <loc>https://jkunze.github.io/blog/about.html</loc>
-    <lastmod>2023-09-11T22:23:35.922Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jkunze.github.io/blog/index.html</loc>
-    <lastmod>2023-09-11T22:23:36.232Z</lastmod>
+    <lastmod>2023-10-27T22:03:12.128Z</lastmod>
   </url>
 </urlset>

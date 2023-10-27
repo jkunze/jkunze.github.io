@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: jkunze.net
+Token: 53182cf7bbba78d83ddbd9b17c2494ab3b0aac7d1aa930d7a400d473ae1b5939
