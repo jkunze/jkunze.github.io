@@ -2,7 +2,9 @@
 title: <img src="jkmain_2017jan.jpg" width="50px" alt="John A. Kunze, 2017"/> John Andrew Kunze <a href="https://namedrop.io/johnkunze"> <img src="nd_logo_icon.png" width="20px" height="20px" alt="how to pronounce"/> </a>
 ---
 
+
 <!--
+xxx yamz logo, ark logo
 <img src="jkmain_2017jan.jpg" width="70px" alt="John A. Kunze, 2017"/> John Andrew Kunze
 <a href="https://namedrop.io/johnkunze"> <img src="nd_logo_icon.png"
     width="20px" height="20px" alt="how to pronounce"/> </a>
@@ -11,7 +13,7 @@ title: <img src="jkmain_2017jan.jpg" width="50px" alt="John A. Kunze, 2017"/> Jo
 [![](nd_logo_icon.png)](https://namedrop.io/johnkunze)
 -->
 
-## Brief Bio &nbsp; <a style="font-size:medium" href="biography.html">(extended bio here)</a>
+## Brief Bio
 
 John Kunze is a pioneer in the theory and practice of digital libraries. With
 a background in computer science and mathematics, he wrote BSD Unix software
@@ -23,8 +25,9 @@ retrieval (Z39.50), for archival transfer (BagIt - RFC8493), for web archiving
 (WARC), and for metadata (RFC2413, RFC2731, ANSI/NISO Z39.85). His specs and
 tools for repository microservices -- Pairtree, Namaste, ReDD, oxum, ERC/ANVL,
 TEMPER, THUMP -- may be found in such places as the HathiTrust and OCFL.
-Follow-on work in metadata includes creation of the Dublin Kernel and Yamz.net.
-His current work focus is the ARK Alliance (arks.org), Yamz, and the DWeb.
+Follow-on work in metadata includes creation of the Dublin Kernel and YAMZ (Yet
+Another Metadata Zoo). His current work focus is the ARK Alliance (arks.org),
+YAMZ.net, and the DWeb. <a href="biography.html">(extended bio ...)</a>
 
 ## ![](infinity.gif) Persistent Identifiers
 
@@ -42,14 +45,12 @@ Persistence Statements: Describing Digital Stickiness
 * <a href="https://www.ietf.org/archive/id/draft-kunze-ark-27.txt"> The ARK Identifier Scheme</a>
 technical specification
 
-## Kernel Metadata and ERCs
+## Metadata
 
-* <a href="https://n2t.net/ark:/13030/c7sn0141m"> Kernel and ERC Specification</a>; very simple metadata
-  - <a href="http://dublincore.org/groups/kernel/"> Kernel Community (within the Dublin Core Metadata Initiative)</a>
-
+* <a href="https://yamz.net">Yet Another Metadata Zoo</a> (YAMZ, pronounced "yams")
+* <a href="https://n2t.net/ark:/13030/c7sn0141m"> Kernel and ERC Specification</a> (very simple metadata); <a href="http://dublincore.org/groups/kernel/"> Kernel Community</a> (within the Dublin Core Metadata Initiative)
 * <a href="https://n2t.net/ark:/13030/c7rr1pm49"> A Metadata Kernel for Electronic Permanence (PDF)</a>
-published in the Journal of Digital Information Vol 2, Issue 2, October 2001
-
+published in the Journal of Digital Information, Vol 2, Issue 2, October 2001
 * <a href="https://datatracker.ietf.org/doc/html/rfc5013">
 The Dublin Core Metadata Element Set (August 2007)</a>
 
@@ -64,10 +65,20 @@ Repository Microservices
 <small>
 <hr/>
 <center>
-<a href="biography.html">John A. Kunze</a> &nbsp; &nbsp; &nbsp; &nbsp; <!-- <a href="cv.html"> Curriculum Vitae </a> --> <a href="presentations.html"> Selected Presentations </a>
+<a href="biography.html">John A. Kunze</a>
+&nbsp; &nbsp; &nbsp; &nbsp; jkunze.net &nbsp; &nbsp; &nbsp; &nbsp;
+<a href="presentations.html"> Selected Presentations </a>
+<!-- <a href="cv.html"> Curriculum Vitae </a> -->
 <br/>
-ARK Alliance -- Ronin Institute
+<a rel="me" href="https://arks.org">ARK Alliance</a>
+&nbsp;|&nbsp; <a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center, Drexel University</a>
+&nbsp;|&nbsp; <a rel="me" href="https://ronininstitute.org">Ronin Institute</a>
 <br/>
-Twitter: @jakkbl
+Mastodon: <a rel="me" href="https://fosstodon.org/@jakkbl">fosstodon.org/@jakkbl</a>
+<br/>
+Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">jakkbl</a>
+&nbsp;|&nbsp; X/Twitter: <a rel="me" href="https://x.com/@jakkbl">jakkbl</a>
+<br/>
+ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
 </center>
 </small>

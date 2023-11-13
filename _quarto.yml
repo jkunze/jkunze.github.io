@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - ".well-known/brave-rewards-verification.txt"
   output-dir: docs
 
 website:
@@ -8,11 +10,15 @@ website:
     left:
       - href: index.qmd
         text: Home
-#      - about.qmd
+
+#      - href: posts/welcome/index.qmd
+#        text: blog
 
 format:
   html:
-    theme: zephyr
     css: styles.css
+    toc: false
+
 #    toc: true
+#    theme: zephyr
 
