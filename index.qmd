@@ -70,15 +70,19 @@ Repository Microservices
 <a href="presentations.html"> Selected Presentations </a>
 <!-- <a href="cv.html"> Curriculum Vitae </a> -->
 <br/>
+ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
+<br/>
 <a rel="me" href="https://arks.org">ARK Alliance</a>
-&nbsp;|&nbsp; <a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center, Drexel University</a>
-&nbsp;|&nbsp; <a rel="me" href="https://ronininstitute.org">Ronin Institute</a>
+&nbsp;|&nbsp;
+<a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center</a>,
+College of Computing and Informatics, Drexel University
 <br/>
 Mastodon: <a rel="me" href="https://fosstodon.org/@jakkbl">fosstodon.org/@jakkbl</a>
+&nbsp;|&nbsp;
+Bluesky: <a rel="me" href="https://bsky.app/profile/jakkbl.bsky.social">jakkbl.bsky.social</a>
 <br/>
-Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">jakkbl</a>
-&nbsp;|&nbsp; X/Twitter: <a rel="me" href="https://x.com/@jakkbl">jakkbl</a>
-<br/>
-ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
+Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">linkedin.com/in/jakkbl</a>
+&nbsp;|&nbsp; 
+Twitter (old posts only): <a rel="me" href="https://x.com/@jakkbl">x.com/@jakkbl</a>
 </center>
 </small>
