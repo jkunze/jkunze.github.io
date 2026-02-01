@@ -1,88 +1,210 @@
 ---
-title: <img src="jkmain_2017jan.jpg" width="50px" alt="John A. Kunze, 2017"/> John Andrew Kunze <a href="https://namedrop.io/johnkunze"> <img src="nd_logo_icon.png" width="20px" height="20px" alt="how to pronounce"/> </a>
+title: John Andrew Kunze -- Biography
 ---
 
+```{=html}
+<table style="width: 100%">
+  <colgroup>
+    <col style="width: 15%">
+    <col style="width: 80%">
+  </colgroup>
+  <tr>
+    <td style="vertical-align: middle; width: 15%">
+      <img src="jk_head_2025.png" width="100px" alt="John A. Kunze, 2025"/></td>
+    <td style="align: middle; vertical-align: middle; width: 80%; line-height: 1.8;">
+      <center>
+      <a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center</a>,
+      Drexel University
+      <br/>
+      <a rel="me" href="cv.html">CV</a>
+      &nbsp;|&nbsp; 
+      ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
+      <br/>
+      Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">linkedin.com/in/jakkbl</a>
+      &nbsp;|&nbsp; 
+      Github: <a rel="me" href="https://github.com/jkunze">jkunze</a>
+      <br/>
+      Mastodon: <a rel="me" href="https://fosstodon.org/@jakkbl">fosstodon.org/@jakkbl</a>
+      &nbsp;|&nbsp;
+      Bluesky: <a rel="me" href="https://bsky.app/profile/jakkbl.bsky.social">jakkbl.bsky.social</a>
+      <br/>
+      <a rel="me" href="index.html">jkunze.net</a>
+      &nbsp;|&nbsp;
+      <a rel="me" href="https://arks.org">ARK Alliance</a>
+      </center>
+    </td>
+  </tr>
+</table>
 
-<!--
-xxx yamz logo, ark logo
-<img src="jkmain_2017jan.jpg" width="70px" alt="John A. Kunze, 2017"/> John Andrew Kunze
-<a href="https://namedrop.io/johnkunze"> <img src="nd_logo_icon.png"
-    width="20px" height="20px" alt="how to pronounce"/> </a>
-<img src="nd_logo_icon.png" width="20px" height="20px"
-              alt="how to pronounce"/>
-[![](nd_logo_icon.png)](https://namedrop.io/johnkunze)
--->
+<!-- Audio Elements - Preload for quicker playback -->
+<audio id="ipa_Kunze" preload="auto">
+    <source src="ipa_Kunze.mp3" type="audio/mpeg">
+    <source src="ipa_Kunze.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
 
-## Brief Bio
+<audio id="ipa_Infocal" preload="auto">
+    <source src="ipa_Infocal.mp3" type="audio/mpeg">
+    <source src="ipa_Infocal.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
 
-John Kunze is a pioneer in the theory and practice of digital libraries. With
-a background in computer science and mathematics, he wrote BSD Unix software
-tools that come pre-installed with Mac and Linux systems. He created the ARK
-identifier scheme, the N2T.net scheme-agnostic resolver (which redirects over
-600 kinds of CURIEs, or "compact identifiers"), and contributed heavily to the
-first standards for URLs (RFC1736, RFC1625, RFC2056), for library search and
-retrieval (Z39.50), for archival transfer (BagIt - RFC8493), for web archiving
-(WARC), and for metadata (RFC2413, RFC2731, ANSI/NISO Z39.85). His specs and
-tools for repository microservices -- Pairtree, Namaste, ReDD, oxum, ERC/ANVL,
-TEMPER, THUMP -- may be found in such places as the HathiTrust and OCFL.
-Follow-on work in metadata includes creation of the Dublin Kernel and YAMZ (Yet
-Another Metadata Zoo). His current work focus is the ARK Alliance (arks.org),
-YAMZ.net, and the DWeb. <a href="biography.html">(extended bio ...)</a>
+<script>
+    function playAudio(audioId) {
+        const audioEl = document.getElementById(audioId);
+        // Reset time to the start in case it was stopped midway
+        audioEl.currentTime = 0;
+        // Play the selected audio file
+        audioEl.play();
+    }
+</script>
 
-## ![](infinity.gif) Persistent Identifiers
+```
 
-* The <a href="https://arks.org">ARK Alliance</a>
-* Long-term identifiers made easy: <a href="https://ezid.cdlib.org">EZID</a>
-* The N2T (Name-to-Thing) Resolver: <a href="https://n2t.net">n2t.net</a>
+John Kunze is a pioneer in the theory and practice of digital libraries whose
+passion for creating and sharing free, open, pragmatic digital solutions has
+guided his long public sector career. With a background in computer science and
+mathematics, he wrote software that comes pre-installed in every Mac and Linux
+system. He had leading roles in establishing identifier standards (URL, ARK),
+metadata standards (Dublin Core), archiving standards (BagIt, WARC), the Z39.50
+library protocol, UC Berkeley's first Campus Wide Information System, and
+repository microservices used in HathTrust and OCFL. He is currently a senior
+research associate with Drexel University.
+
+* Participating in open source 20 years before that term was coined, in 1978
+at the University of California (UC) Berkeley Kunze began fixing BSD Unix
+bugs and writing tools that come pre-installed in today's Mac and Linux systems
+([jot](https://man.openbsd.org/jot.1), [lam](https://man.openbsd.org/lam.1),
+[rs](https://man.openbsd.org/rs.1)). During that time he maintained the global
+terminal capability database ([termcap](https://man.openbsd.org/termcap.5)),
+created an online Unix help system, brought the Bell Labs Unix
+"[learn](https://wolfram.schneider.org/bsd/7thEdManVol2/learn/learn.html)"
+program and its computer-aided instruction scripts to life, and became
+principal author of the book [Common Lisp: the
+Reference](https://n2t.net/ark:/13960/t68350d1q).
+
+* In 1989 he began creating UC Berkeley's first Campus Wide Information System
+(CWIS).\* Into that system, called
+[Infocal](https://n2t.net/ark:/13960/s2mr5mfz7g9),†
+he built pre-web hypertext navigation (inspired by "learn" scripts), a custom
+search engine, and integration with \(a\) library catalog search via the
+then-new Z39.50 protocol, \(b\) major campus datasets (course catalog, schedule
+of classes, phone book, job vacancies), and \(c\) the World Wide Web. The
+protocol had never been implemented and required him to invest heavily in
+standards development, software development (releasing the first complete open
+source client-server codebase), and the first Z39.50 interoperability
+demonstration (with Penn State University and the UC Division of Library
+Automation).
+<!-- span class="pronunciation-speaker" data-text="Info Cal">🔊</span> -->
+
+* As Infocal became web-aware, Kunze began to work with identifier standards.
+In 1994 he declined principal editorship of the URL specification, and instead
+[agreed to write](https://www.ietf.org/proceedings/28.pdf) the functional
+requirements in an attempt to unblock the URL standard, at an impasse because
+URLs were breaking so often. His document permitted them to break and was
+published as [RFC1736](https://www.ietf.org/rfc/rfc1736), resulting in the
+immediate approval of the first URL standard as
+[RFC1738](https://www.ietf.org/rfc/rfc1738). As part of a 3-year fellowship at
+the US National Library of Medicine (NLM), he analyzed the persistent
+identifier landscape and in 2000 defined the framework for the NLM
+multi-dimensional [permanence levels](https://n2t.net/ark:/13960/s2kk13d8kdh).
+
+* Believing broken URLs to be his fault, Kunze created the [ARK
+(Archival Resource Key)](https://n2t.net/ark:/13030/c7n00zt1z) persistent
+identifier scheme in 2001 at the California Digital Library (CDL). With the
+idea of addressing broken links flexibly and affordably while leveraging the
+NLM permanence levels, he evolved the [ARK
+specification](https://datatracker.ietf.org/doc/draft-kunze-ark/), created the
+ARK resolver and registration infrastructure, and registered the first 600 ARK
+organizations. In 2018 with help from DuraSpace, he led creation and growth of
+the ARK Alliance (arks.org). By the end of 2025, there were over 1720 ARK
+organizations, including 12 national libraries, 215 universities, 254 archives,
+144 museums, 124 journals, and 59 scientific centers. He also co-authored
+[RFC1625](https://www.ietf.org/rfc/rfc1625) (WAIS) and
+[RFC2056](https://www.ietf.org/rfc/rfc2056) (Z39.50 URLs).
+
+* Motivated by the Unix philosophy favoring simple, extensible tools that
+combine easily and by a distaste for siloed solutions, Kunze developed
+open source tools for ARKs that also work for non-ARK identifiers.
+The Name-to-Thing (N2T.net) resolver supports hundreds of [compact identifier
+schemes](https://doi.org/10.1038/sdata.2018.29), the [EZID identifier
+service](https://www.slideshare.net/slideshow/ezid-easy/9978331) supports ARKs
+and DOIs (URNs, PURLs, and IGSNs were planned), the [Noid (Nice Opaque
+Identifier) Tool](https://metacpan.org/dist/Noid/view/noid) mints billions of
+ARK and Handle identifiers, and
+[THUMP](https://datatracker.ietf.org/doc/draft-kunze-thump/)
+specifies inflections for ARKs that work with any URL-based identifiers.
+
+* A key takeaway from Z39.50 interoperability testing, especially for
+[nonbibliographic
+applications](https://uh-ir.tdl.org/items/c12d000a-5b3d-4df3-868f-9f64033f0e96),
+was the notion of shared attributes such as title, author, and publisher. This
+prompted him to propose the [URC](https://n2t.net/ark:/13960/s218wxzv0w5) in
+1992 and to jump on board the Dublin Core in 1995. There he led publication of
+the world's first metadata standards
+([RFC2413](https://www.ietf.org/rfc/rfc2413),
+[RFC2731](https://www.ietf.org/rfc/rfc2731), [ANSI/NISO
+Z39.85](https://webstore.ansi.org/preview-pages/NISO/preview_ANSI+NISO+Z39.85-2001.pdf)),
+upon which most metadata schemas are based: Schema.org, OAI-PMH, MODS, METS,
+EPUB, DataCite, Darwin Core, etc. Considering metadata to be far from finished,
+he created the minimalist [Dublin Kernel](https://n2t.net/ark:/13030/c7rr1pm49)
+based on his Z39.50 work, the [TEMPER date
+format](https://datatracker.ietf.org/doc/draft-kunze-temper/), and a vision
+\(1996\) of a kind of
+["Dublin Mantle"](https://figshare.com/articles/journal_contribution/A_Unified_Element_Vocabulary_for_Metadata/5212459?file=8901253)
+that he that he would later implement as the
+[YAMZ.net vocabulary builder](https://n2t.net/ark:/13960/s21gn0209p1).
+
+* Under a grant from the Library of Congress (LC) for harvesting and preserving
+at-risk websites, Kunze published the [first draft of the WARC
+standard](https://datatracker.ietf.org/doc/draft-kunze-warc/), which is now
+used in all large-scale web archiving (e.g., Internet Archive). To move files
+between archives, he worked with the LC team as principal author of the BagIt
+standard ([RFC8493](https://www.ietf.org/rfc/rfc8493)), which is also widely
+used (e.g., Library of Congress, Stanford, Cornell, Dryad). He also created
+repository microservice specifications used in HathiTrust
+([Pairtree](https://datatracker.ietf.org/doc/draft-kunze-pairtree/)), BagIt
+([Oxum](https://datatracker.ietf.org/doc/draft-kunze-oxum/)), and
+[OCFL](https://ocfl.io/)
+([Namaste](https://ocfl.io/draft/implementation-notes/)).
+
 <br/>
-Low-cost, low-risk resolver discovery (ARKs, DOIs, et al), suffix passthrough, meta-resolving, and namespace splitting (<a href="n2t_net_ipres_jak.ppt">2006 PPT slides</a>)
-* <a href="https://doi.org/10.5334/dsj-2017-039">
-Persistence Statements: Describing Digital Stickiness
-</a>
-* <a href="https://arks.org/about">ARK Identifier Overview</a>
-* <a href="https://n2t.net/ark:/13030/c7n00zt1z"> Towards Electronic Persistence Using ARK Identifiers (PDF)</a>
-* <a href="http://n2t.net/e/noid.html"> Noid (Nice Opaque Identifier) Minting and Binding Tool</a>
-* <a href="https://www.ietf.org/archive/id/draft-kunze-ark-27.txt"> The ARK Identifier Scheme</a>
-technical specification
 
-## Metadata
+---
 
-* <a href="https://yamz.net">Yet Another Metadata Zoo</a> (YAMZ, pronounced "yams")
-* <a href="https://n2t.net/ark:/13030/c7sn0141m"> Kernel and ERC Specification</a> (very simple metadata); <a href="http://dublincore.org/groups/kernel/"> Kernel Community</a> (within the Dublin Core Metadata Initiative)
-* <a href="https://n2t.net/ark:/13030/c7rr1pm49"> A Metadata Kernel for Electronic Permanence (PDF)</a>
-published in the Journal of Digital Information, Vol 2, Issue 2, October 2001
-* <a href="https://datatracker.ietf.org/doc/html/rfc5013">
-The Dublin Core Metadata Element Set (August 2007)</a>
+\* Not everyone knows that a few years before the web appeared, dozens of
+custom-built state-of-the-art [networked information
+systems](https://datatracker.ietf.org/doc/rfc1402) were emerging at
+universities for the purpose of sharing diverse types of information with
+students, faculty, staff, and the general public. In this brief era of the
+[Campus Wide Information System
+(CWIS)](https://search.syr.edu/permalink/01SYU_INST/1gbpq8j/alma9911067813408496),
+institutions of higher education effectively piloted the WWW insofar as they
+worked out the presentation and maintenance of heterogeneous online data while
+using advanced networking protocols such as FTP, NNTP, Z39.50, and Gopher.
+Gopher (from the University of Minnesota) was the first CWIS software packaged
+for easy installation, and just as thousands of non-campus organizations were
+adopting it, the WWW software appeared with its winning hypertext capability
+began to edge it out.
+<br/>
+\† Pronunciation (<a href="https://www.leskoff.com/s01763-0">IPA</a> en-us):
+Kunze /<a href="#" onclick="playAudio('ipa_Kunze'); return false;">ˈkʊnziː</a>/,
+Infocal /<a href="#" onclick="playAudio('ipa_Infocal'); return false;">ˈɪnfəʊkæl</a>/,
+Noid /<a href="#" onclick="playAudio('ipa_Noid'); return false;">nɔɪd</a>/,
+EZID /<a href="#" onclick="playAudio('ipa_EZID'); return false;">iːˌziːaɪˌdiː</a>/,
+URL /<a href="#" onclick="playAudio('ipa_URL'); return false;">juːɑːɹɛl</a>/
+<!-- xxx other words: Noid, EZID -->
+<!-- used capyschool.com/en/reader/ for IPA to mp3 file;
+     provider Amazon, en-US, type neural, voice Joanna;
+     https://www.freeconvert.com/mp3-to-ogg/download for ogg -->
+<!-- <span class="pronunciation-speaker" data-text="John Kunzee">🔊</span> -->
+
+---
 
 <!--
 <a id="repository-microservices" class="anchor" href="#repository-microservices" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 Repository Microservices
  
-<li><a href="checkmspec.html">Checkm: a checksum-based manifest format</a>
+XXX <li><a href="checkmspec.html">Checkm: a checksum-based manifest format</a>
 -->
 
-<br/>
-<small>
-<hr/>
-<center>
-<a href="biography.html">John A. Kunze</a>
-&nbsp; &nbsp; &nbsp; &nbsp; jkunze.net &nbsp; &nbsp; &nbsp; &nbsp;
-<a href="presentations.html"> Selected Presentations </a>
-<!-- <a href="cv.html"> Curriculum Vitae </a> -->
-<br/>
-ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
-<br/>
-<a rel="me" href="https://arks.org">ARK Alliance</a>
-&nbsp;|&nbsp;
-<a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center</a>,
-College of Computing and Informatics, Drexel University
-<br/>
-Mastodon: <a rel="me" href="https://fosstodon.org/@jakkbl">fosstodon.org/@jakkbl</a>
-&nbsp;|&nbsp;
-Bluesky: <a rel="me" href="https://bsky.app/profile/jakkbl.bsky.social">jakkbl.bsky.social</a>
-<br/>
-Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">linkedin.com/in/jakkbl</a>
-&nbsp;|&nbsp; 
-Twitter (old posts only): <a rel="me" href="https://x.com/@jakkbl">x.com/@jakkbl</a>
-</center>
-</small>
