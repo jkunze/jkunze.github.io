@@ -9,15 +9,16 @@ title: John Andrew Kunze -- Biography
     <col style="width: 80%">
   </colgroup>
   <tr>
-    <td style="vertical-align: middle; width: 15%">
-      <img src="jk_head_2025.png" width="100px" alt="John A. Kunze, 2025"/></td>
-    <td style="align: middle; vertical-align: middle; width: 80%; line-height: 1.8;">
+    <td style="vertical-align: middle; width: 22%">
+      <!-- img src="jk_head_2025.png" width="100px" alt="John A. Kunze, 2025"/>u -->
+      <img src="jk_2025_hd.png" width="200px" alt="John A. Kunze, 2025"/></td>
+    <td style="align: middle; vertical-align: middle; width: 76%; line-height: 1.8;">
       <center>
       <a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center</a>,
       Drexel University
       <br/>
       <a rel="me" href="cv.html">CV</a>
-      &nbsp;|&nbsp; 
+      &nbsp;&nbsp;|&nbsp; 
       ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
       <br/>
       Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">linkedin.com/in/jakkbl</a>
@@ -46,6 +47,24 @@ title: John Andrew Kunze -- Biography
 <audio id="ipa_Infocal" preload="auto">
     <source src="ipa_Infocal.mp3" type="audio/mpeg">
     <source src="ipa_Infocal.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio id="ipa_Noid" preload="auto">
+    <source src="ipa_Noid.mp3" type="audio/mpeg">
+    <source src="ipa_Noid.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio id="ipa_EZID" preload="auto">
+    <source src="ipa_EZID.mp3" type="audio/mpeg">
+    <source src="ipa_EZID.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio id="ipa_URL" preload="auto">
+    <source src="ipa_URL.mp3" type="audio/mpeg">
+    <source src="ipa_URL.ogg" type="audio/ogg">
     Your browser does not support the audio element.
 </audio>
 
@@ -110,7 +129,7 @@ identifier landscape and in 2000 defined the framework for the NLM
 multi-dimensional [permanence levels](https://n2t.net/ark:/13960/s2kk13d8kdh).
 
 * Believing broken URLs to be his fault, Kunze created the [ARK
-(Archival Resource Key)](https://n2t.net/ark:/13030/c7n00zt1z) persistent
+\(Archival Resource Key)](https://n2t.net/ark:/13030/c7n00zt1z) persistent
 identifier scheme in 2001 at the California Digital Library (CDL). With the
 idea of addressing broken links flexibly and affordably while leveraging the
 NLM permanence levels, he evolved the [ARK
