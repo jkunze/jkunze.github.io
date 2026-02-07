@@ -4,23 +4,25 @@ title: "John Andrew Kunze -- Curriculum Vitae"
 
 <small>
 <hr/>
-<center>
+<center style="line-height: 1.8;">
 <a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center</a>,
-College of Computing and Informatics, Drexel University
+Drexel University
+<br/>
+3141 Chestnut Street Philadelphia, PA 19104, USA
+<br/>
+ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
+&nbsp;|&nbsp; 
+Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">linkedin.com/in/jakkbl</a>
+&nbsp;|&nbsp; 
+Github: <a rel="me" href="https://github.com/jkunze">jkunze</a>
 <br/>
 Mastodon: <a rel="me" href="https://fosstodon.org/@jakkbl">fosstodon.org/@jakkbl</a>
 &nbsp;|&nbsp;
 Bluesky: <a rel="me" href="https://bsky.app/profile/jakkbl.bsky.social">jakkbl.bsky.social</a>
 <br/>
-Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">linkedin.com/in/jakkbl</a>
-&nbsp;|&nbsp; 
-Github: <a rel="me" href="https://github.com/jkunze">jkunze</a>
-<br/>
-ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
-<br/>
-<a rel="me" href="https://arks.org">ARK Alliance</a>
-&nbsp;|&nbsp;
 <a rel="me" href="index.html">jkunze.net</a>
+&nbsp;|&nbsp;
+<a rel="me" href="https://arks.org">ARK Alliance</a>
 </center>
 </small>
 
@@ -97,7 +99,8 @@ was published and the framework adopted by the US National Agriculture
 Library; built on this work for ARK persistence statements</span>
 
 <span class="small">ARK Persistent Identification Scheme: at NLM,
-analyzed 1998-era persistent naming schemes (URN, DOI, PURL, PDI), and
+analyzed 1998-era persistent naming schemes (URN, DOI, PURL, Handle, PDI
+(Persistent Document Identifier)), and
 formulated a new scheme, the Archival Resource Key (ARK), founded on the
 principle that persistence is purely about the service commitments of
 current object holders, not scheme syntax or the intent of name
@@ -111,9 +114,10 @@ opaque, and furnished with a check character that guarantees each in the
 face of single digit and transcription errors; built and prototyped with
 a set of international partners the Name-To-Thing (N2T) resolver as a
 low-cost, low-risk consortially owned resolver for hundreds of
-identifier schemes (ARK, DOI, URN, PDB, etc.); gave talks on these
+identifier schemes (ARK, DOI, ChEBI, PDB, etc.); gave talks on these
 subjects at international meetings; founded the ARK Alliance (arks.org)
-to sustain ARK infrastructure</span>
+to sustain ARK infrastructure and led its growth to over 1700 ARK
+organizations</span>
 
 <span class="small">**Networked Information Systems**</span>
 
@@ -206,10 +210,10 @@ development of various campus proxy servers</span>
 
 <span class="small">**Computer Operating Systems**</span>
 
-<span class="small">Performance Analysis: wrote programs to summarize
-and plot UNIX 4.2BSD file system activity; debugged kernel traces and a
-multi-strategy cache simulator based on them (presented at ACM SigOps,
-1985)</span>
+<span class="small">Performance Analysis: wrote programs in S (precursor
+of the R language) to summarize and plot UNIX 4.2BSD file system activity;
+debugged kernel traces and a multi-strategy cache simulator based on them
+(presented at ACM SigOps, 1985)</span>
 
 <span class="small">Heterogeneous Distributed Systems: worked on a
 project (1985) to bring up ULTRIX and VMS clients on a network of fully
@@ -218,11 +222,10 @@ wrote ULTRIX kernel code to implement a transport-level network
 interface, consisting of routines to generate server-side programs in a
 simple network command language</span>
 
-<span class="small">Command-Level Operating System Primitives:  
+<span class="small">Command-Level Operating System Primitives:
 conceived a method of general-purpose software tool design; wrote three
-UNIX tools distributed with 4.2/4.3BSD using this method (Master’s
-Degree Project, 1983); these tools ("jot", "rs", and "lam") are
-distributed in current Mac OS X systems</span>
+UNIX tools distributed with 4.2/4.3BSD using this method; these tools ("jot",
+"rs", and "lam") are distributed in current Mac OS X systems</span>
 
 <span class="small">VLSI Coprocessor Design: worked on the design for
 a decimal coprocessor that IBM implemented along with Micro/370, an
@@ -230,9 +233,9 @@ IBM/370 architecture on a chip; wrote and tested microcode for the
 decimal EDIT AND MARK instruction (1984)</span>
 
 <span class="small">Terminal Capability Database: in the early 1980’s,
-maintained the Berkeley UNIX *termcap* file for a period of about five
-years; this file remains an integral part of modern Linux and other
-UNIX-based systems</span>
+maintained the Berkeley UNIX *termcap* file for a period of about five years;
+this data lives on (also in *terminfo*) as an integral part of modern Linux
+and UNIX-based systems</span>
 
 <span class="small">**Communication/Instruction**</span>
 
@@ -255,7 +258,8 @@ system</span>
 creation of a flexible software system for faculty to author and
 maintain course home pages</span>
 
-<span class="small">Instruction: at UC Berkeley, accrued ten years’
+<span class="small">Instruction: presented over a dozen ARK tutorials
+both online and in-person at conferences; at UC Berkeley, accrued ten years’
 experience in general consulting (advising) with users, students, and
 programmers on UNIX and IBM CMS; teaching assistant for undergraduate
 computer architecture; seven years’ experience designing and teaching
@@ -280,8 +284,8 @@ work</span>
 
 <span class="small">SENIOR RESEARCH ASSOCIATE − Drexel University</span>
 
-<span class="small">Guided students and interns in the ongoing development of
-the YAMZ.net metadictionary and its use of ARK identifiers while leading the
+<span class="small">Guided students and interns in the ongoing development
+of the YAMZ.net metadictionary and its use of ARK identifiers. Led the
 ARK Alliance expansion to over 1700 organizations.
 </span>
 
@@ -290,11 +294,16 @@ ARK Alliance expansion to over 1700 organizations.
 <span class="small">IDENTIFIER SYSTEMS ARCHITECT − UCOP CDL</span>
 
 <span class="small">Led the expansion of the EZID.cdlib.org identifier
-service, the N2T resolver, and the YAMZ.net metadictionary. Added a
+service and the N2T resolver. Added a
 formal agreement between n2t.net and identifiers.org to support compact
-identifiers for over 700 identifier schemes. Founded and led the ARK
+identifiers for over 700 identifier schemes. Gave the keynote address (in
+French) at the 2018 ARK Summit at the BnF in Paris. As chair of the DataONE
+preservation and metadata working group, conceived and led creation of the
+YAMZ.net open, collaborative vocabulary building tool to mitigate against
+traditional inefficient, non-inclusive vocabulary consensus methods (eg,
+standard design by committee). Founded and led the ARK
 Alliance (arks.org) to sustain the ARK technical specification, its
-supporting registry, and the global ARK resolver. There are now over
+supporting registry, and the global ARK resolver. In 2022 there were over
 1200 ARK organizations, including 10 national libraries, 145
 universities, 184 archives, 75 journals, and major museums such as the
 Louvre, Smithsonian, and Frick.</span>
@@ -364,7 +373,7 @@ component.</span>
 <span class="small">CONSULTANT, MEDICAL INFORMATICS − UCSF CKM and the
 NLM</span>
 
-<span class="small">Received a three-year grant (somewhat resembling a
+<span class="small">Received a three-year grant (resembling a
 fellowship) from the NLM to research persistent naming on the internet
 and to advise NLM on what to do about electronic permanence. Across a
 range of proposals and literature, I analyzed methods, algorithms,
