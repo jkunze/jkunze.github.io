@@ -10,7 +10,7 @@ title: John Andrew Kunze -- Biography
   </colgroup>
   <tr>
     <td style="vertical-align: middle; width: 22%">
-      <img src="jk_2025_hd.png" width="200px" alt="John A. Kunze, 2025"/></td>
+      <img src="jk_2025_hd.png" width="200px" title="Photo of John Andrew Kunze, April 2025"/></td>
     <td style="align: middle; vertical-align: middle; width: 76%; line-height: 1.8;">
       <center>
       <a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center</a>,
@@ -105,7 +105,8 @@ system, brought the Bell Labs Unix
 program and its computer-aided instruction scripts to life, and became
 principal author of the book [Common Lisp: the
 Reference](https://n2t.net/ark:/13960/t68350d1q). As much as he liked
-advanced systems, these experiences taught him that "content is king".
+advanced technology, these experiences taught him "systems are cool,
+but content is king."
 
 * In 1989 he proposed and began creating UC Berkeley's first Campus Wide
 Information System (CWIS).\* Into that system, called
@@ -209,12 +210,12 @@ universities for the purpose of sharing diverse types of information with
 students, faculty, staff, and the general public. In this brief era of the
 [Campus Wide Information System
 (CWIS)](https://search.syr.edu/permalink/01SYU_INST/1gbpq8j/alma9911067813408496),
-institutions of higher education effectively piloted the web insofar as working
-out presentation and maintenance of heterogeneous online data over network
-protocols such as FTP, NNTP, Z39.50, and Gopher. From the University of
+institutions of higher education effectively piloted the web insofar as they
+worked out presentation and maintenance of heterogeneous online data over
+network protocols such as FTP, NNTP, Z39.50, and Gopher. From the University of
 Minnesota, Gopher was the first CWIS software packaged for easy installation,
 and just as thousands of non-campus sites were adopting it, the WWW software's
-winning hypertext capability began to edge it out.
+winning hypertext capability began to overtake it.
 <br/>
 \† <a href="https://www.leskoff.com/s01763-0">IPA</a> pronunciation links (🔊):
 Kunze /<a href="#" onclick="playAudio('ipa_Kunze'); return false;">ˈkʊnziː</a>/,
