@@ -10,7 +10,7 @@ title: John Andrew Kunze -- Biography
   </colgroup>
   <tr>
     <td style="vertical-align: middle; width: 22%">
-      <img src="jk_2025_hd.png" width="200px" title="Photo of John Andrew Kunze, April 2025"/></td>
+      <img src="assets/jk_2025_hd.png" width="200px" title="Photo of John Andrew Kunze, April 2025"/></td>
     <td style="align: middle; vertical-align: middle; width: 76%; line-height: 1.8;">
       <center>
       <a rel="me" href="https://mrc.cci.drexel.edu">Metadata Research Center</a>,
@@ -40,32 +40,32 @@ title: John Andrew Kunze -- Biography
 
 <!-- Audio Elements - Preload for quicker playback -->
 <audio id="ipa_Kunze" preload="auto">
-    <source src="ipa_Kunze.mp3" type="audio/mpeg">
-    <source src="ipa_Kunze.ogg" type="audio/ogg">
+    <source src="assets/ipa_Kunze.mp3" type="audio/mpeg">
+    <source src="assets/ipa_Kunze.ogg" type="audio/ogg">
     Your browser does not support the audio element.
 </audio>
 
 <audio id="ipa_Infocal" preload="auto">
-    <source src="ipa_Infocal.mp3" type="audio/mpeg">
-    <source src="ipa_Infocal.ogg" type="audio/ogg">
+    <source src="assets/ipa_Infocal.mp3" type="audio/mpeg">
+    <source src="assets/ipa_Infocal.ogg" type="audio/ogg">
     Your browser does not support the audio element.
 </audio>
 
 <audio id="ipa_Noid" preload="auto">
-    <source src="ipa_Noid.mp3" type="audio/mpeg">
-    <source src="ipa_Noid.ogg" type="audio/ogg">
+    <source src="assets/ipa_Noid.mp3" type="audio/mpeg">
+    <source src="assets/ipa_Noid.ogg" type="audio/ogg">
     Your browser does not support the audio element.
 </audio>
 
 <audio id="ipa_EZID" preload="auto">
-    <source src="ipa_EZID.mp3" type="audio/mpeg">
-    <source src="ipa_EZID.ogg" type="audio/ogg">
+    <source src="assets/ipa_EZID.mp3" type="audio/mpeg">
+    <source src="assets/ipa_EZID.ogg" type="audio/ogg">
     Your browser does not support the audio element.
 </audio>
 
 <audio id="ipa_URL" preload="auto">
-    <source src="ipa_URL.mp3" type="audio/mpeg">
-    <source src="ipa_URL.ogg" type="audio/ogg">
+    <source src="assets/ipa_URL.mp3" type="audio/mpeg">
+    <source src="assets/ipa_URL.ogg" type="audio/ogg">
     Your browser does not support the audio element.
 </audio>
 
@@ -216,9 +216,9 @@ worked out presentation and maintenance of heterogeneous online data over
 network protocols such as FTP, NNTP, Z39.50, and Gopher. From the University of
 Minnesota, Gopher was the first CWIS software packaged for easy installation,
 and just as thousands of non-campus sites were adopting it, the WWW software's
-winning hypertext capability began to overtake it.
+winning hypertext capability overtook it.
 <br/>
-\† <a href="https://www.leskoff.com/s01763-0">IPA</a> pronunciation links (🔊):
+\† <a href="https://www.leskoff.com/s01763-0">IPA</a> pronunciation links 🔊:
 Kunze /<a href="#" onclick="playAudio('ipa_Kunze'); return false;">ˈkʊnziː</a>/,
 Infocal /<a href="#" onclick="playAudio('ipa_Infocal'); return false;">ˈɪnfəʊkæl</a>/,
 Noid /<a href="#" onclick="playAudio('ipa_Noid'); return false;">nɔɪd</a>/,
