@@ -89,9 +89,9 @@ Mac and Linux system. He had leading roles in establishing identifier standards
 (URL, ARK), metadata standards (Dublin Core), archiving standards (BagIt,
 WARC), the Z39.50 library protocol, UC Berkeley's first Campus Wide Information
 System, and repository microservices used in HathTrust and OCFL. He is
-currently leading the ARK Alliance forward and serving as a senior research
-associate at Drexel University, where he is working on the crowdsourced
-vocabulary tool, [yamz.net](https://yamz.net).
+currently leading the [ARK Alliance](https://arks.org) forward and serving as
+a senior research associate at Drexel University, where he is working on the
+crowdsourced vocabulary tool, [yamz.net](https://yamz.net).
 
 * Participating in open source at the University of California (UC) Berkeley
 from 1978-1983, 20 years before that term was coined, Kunze began fixing BSD
@@ -187,8 +187,8 @@ that he that he would later implement as the
 [YAMZ.net vocabulary builder](https://n2t.net/ark:/13960/s21gn0209p1).
 
 * In 2003 Kunze wrote the vision for a Library of Congress (LC) grant to
-harvest and preserve at-risk websites. Under that grant he published the [first
-draft of the WARC
+harvest and preserve at-risk websites. Under that grant, he published the
+[first draft of the WARC
 standard](https://datatracker.ietf.org/doc/draft-kunze-warc/), now used in all
 large-scale web archiving (e.g., Internet Archive). To move files between
 archives, he worked with the LC team as principal author of the BagIt standard
