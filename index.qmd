@@ -91,7 +91,7 @@ WARC), the Z39.50 library protocol, UC Berkeley's first Campus Wide Information
 System, and repository microservices used in HathTrust and OCFL. He is
 currently leading the ARK Alliance forward and serving as a senior research
 associate at Drexel University, where he is working on the crowdsourced
-vocabulary tool, yamz.net.
+vocabulary tool, [yamz.net](https://yamz.net).
 
 * Participating in open source at the University of California (UC) Berkeley
 from 1978-1983, 20 years before that term was coined, Kunze began fixing BSD
@@ -104,9 +104,9 @@ system, brought the Bell Labs Unix
 "[learn](https://wolfram.schneider.org/bsd/7thEdManVol2/learn/learn.html)"
 program and its computer-aided instruction scripts to life, and became
 principal author of the book [Common Lisp: the
-Reference](https://n2t.net/ark:/13960/t68350d1q). As much as he liked
-advanced technology, these experiences taught him "systems are cool,
-but content is king."
+Reference](https://n2t.net/ark:/13960/t68350d1q).
+Realizing that content is king in information technology, he became interested
+in working with libraries and archives.
 
 * In 1989 he proposed and began creating UC Berkeley's first Campus Wide
 Information System (CWIS).\* Into that system, called
@@ -127,7 +127,7 @@ In 1994 he declined principal editorship of the URL specification, and instead
 [agreed to write](https://www.ietf.org/proceedings/28.pdf) the functional
 requirements in an attempt to unblock the URL standard, which was at an impasse
 because the average URL link (web address) was seen to break (stop working)
-after about 44 days. His proposed standard permitted them to break and was
+after about 44 days. His proposed standard permitted URLs to break and was
 published as [RFC1736](https://www.ietf.org/rfc/rfc1736), resulting in the
 immediate approval of the first URL standard as
 [RFC1738](https://www.ietf.org/rfc/rfc1738). As part of a 3-year fellowship
@@ -143,21 +143,22 @@ NLM permanence levels, he evolved the [ARK
 specification](https://datatracker.ietf.org/doc/draft-kunze-ark/), created the
 ARK resolver and registration infrastructure, and registered the first 600 ARK
 organizations. In 2018 with help from DuraSpace, he led the creation and growth
-of the ARK Alliance (arks.org). By the end of 2025, there were over 1720 ARK
-organizations, including 12 national libraries, 215 universities, 254 archives,
-144 museums, 124 journals, and 59 scientific centers. The non-paywalled ARK
-identifier is vital for open knowledge linking across world cultural and
-scientific institutions, especially in the global South.
+of the ARK Alliance ([arks.org](https://arks.org)). By the end of 2025, there
+were over 1720 ARK organizations, including 12 national libraries, 215
+universities, 254 archives, 144 museums, 124 journals, and 59 scientific
+centers. The non-paywalled ARK identifier is vital for open knowledge linking
+across world cultural and scientific institutions, especially in the global
+South.
 
 * Motivated by the Unix philosophy favoring simple, extensible tools that
 combine easily and by a distaste for siloed solutions, Kunze developed
 open source tools for ARKs that also work for non-ARK identifiers.
-The Name-to-Thing (N2T.net) resolver supports hundreds of [compact identifier
-schemes](https://doi.org/10.1038/sdata.2018.29), the [EZID identifier
-service](https://www.slideshare.net/slideshow/ezid-easy/9978331) supports ARKs
-and DOIs (URNs, PURLs, and IGSNs were planned), the [Noid (Nice Opaque
-Identifier) Tool](https://metacpan.org/dist/Noid/view/noid) mints billions of
-ARK and Handle identifiers, and
+The Name-to-Thing ([N2T.net](https://n2t.net)) resolver supports hundreds of
+[compact identifier schemes](https://doi.org/10.1038/sdata.2018.29), the [EZID
+identifier service](https://www.slideshare.net/slideshow/ezid-easy/9978331)
+supports ARKs and DOIs (URNs, PURLs, and IGSNs were planned), the [Noid (Nice
+Opaque Identifier) Tool](https://metacpan.org/dist/Noid/view/noid) mints
+billions of ARK and Handle identifiers, and
 [THUMP](https://datatracker.ietf.org/doc/draft-kunze-thump/)
 specifies inflections for ARKs that work with any URL-based identifiers.
 He also co-authored
@@ -170,7 +171,7 @@ applications](https://uh-ir.tdl.org/items/c12d000a-5b3d-4df3-868f-9f64033f0e96),
 was the notion of shared attributes such as title, author, and date.
 This inspired him to propose the Uniform Resource Citation
 ([URC](https://n2t.net/ark:/13960/s218wxzv0w5)) in 1992 and to join the Dublin
-Core initiative in 1995 to focus on a new thing they called metadata. There he
+Core initiative in 1995 to focus on a new thing being called metadata. There he
 led publication of the world's first metadata standards
 ([RFC2413](https://www.ietf.org/rfc/rfc2413),
 [RFC2731](https://www.ietf.org/rfc/rfc2731), [ANSI/NISO
