@@ -184,7 +184,7 @@ format](https://datatracker.ietf.org/doc/draft-kunze-temper/), and a vision
 \(1996\) of a kind of
 ["Dublin Mantle"](https://figshare.com/articles/journal_contribution/A_Unified_Element_Vocabulary_for_Metadata/5212459?file=8901253)
 that he that he would later implement as the
-[YAMZ.net vocabulary builder](https://n2t.net/ark:/13960/s21gn0209p1).
+[YAMZ.net vocabulary builder](https://n2t.net/ark:/13960/s2zg7dwqz6t).
 
 * In 2003 Kunze wrote the vision for a Library of Congress (LC) grant to
 harvest and preserve at-risk websites. Under that grant, he published the
