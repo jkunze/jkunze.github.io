@@ -18,7 +18,7 @@ title: John Andrew Kunze -- Biography
       <br/>
       3141 Chestnut Street Philadelphia, PA 19104, USA
       <br/>
-      <a rel="me" href="cv.html">CV</a>
+      <a rel="me" href="cv.html">Curriculum Vitae</a>
       &nbsp;&nbsp;|&nbsp; 
       ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
       <br/>
@@ -94,7 +94,7 @@ a senior research associate at Drexel University, where he is working on the
 crowdsourced vocabulary tool, [yamz.net](https://yamz.net).
 
 * Participating in open source at the University of California (UC) Berkeley
-from 1978-1983, 20 years before that term was coined, Kunze began fixing BSD
+from 1978-1983, 20 years before that term was coined, Kunze\* began fixing BSD
 Unix bugs and writing tools that come pre-installed in today's Mac and Linux
 systems ([jot](https://man.openbsd.org/jot.1),
 [lam](https://man.openbsd.org/lam.1), [rs](https://man.openbsd.org/rs.1)).
@@ -109,8 +109,8 @@ Realizing that content is king in information technology, he became interested
 in working with libraries and archives.
 
 * In 1989 he proposed and began creating UC Berkeley's first Campus Wide
-Information System (CWIS).\* Into that system, called
-[Infocal](https://n2t.net/ark:/13960/s2mr5mfz7g9),† he built in pre-web
+Information System (CWIS).\† Into that system, called
+[Infocal](https://n2t.net/ark:/13960/s2mr5mfz7g9), he built in pre-web
 hypertext navigation (inspired by "learn" scripts), a custom search engine, and
 open access to \(a\) library catalog search via the then-new Z39.50 search and
 retrieval protocol, \(b\) major campus datasets previously available only on
@@ -171,8 +171,8 @@ applications](https://uh-ir.tdl.org/items/c12d000a-5b3d-4df3-868f-9f64033f0e96),
 was the notion of shared attributes such as title, author, and date.
 This inspired him to propose the Uniform Resource Citation
 ([URC](https://n2t.net/ark:/13960/s218wxzv0w5)) in 1992 and to join the Dublin
-Core initiative in 1995 to focus on a new thing being called metadata. There he
-led publication of the world's first metadata standards
+Core initiative in 1995 to focus on a new thing being called metadata.\‡
+There he led publication of the world's first metadata standards
 ([RFC2413](https://www.ietf.org/rfc/rfc2413),
 [RFC2731](https://www.ietf.org/rfc/rfc2731), [ANSI/NISO
 Z39.85](https://webstore.ansi.org/preview-pages/NISO/preview_ANSI+NISO+Z39.85-2001.pdf)),
@@ -204,7 +204,14 @@ repository microservice specifications used in HathiTrust
 
 ---
 
-\* Not everyone knows that a few years before the web appeared, dozens of
+\* <a href="https://www.leskoff.com/s01763-0">IPA</a> pronunciation links 🔊:
+Kunze /<a href="#" onclick="playAudio('ipa_Kunze'); return false;">ˈkʊnziː</a>/,
+Infocal /<a href="#" onclick="playAudio('ipa_Infocal'); return false;">ˈɪnfəʊkæl</a>/,
+Noid /<a href="#" onclick="playAudio('ipa_Noid'); return false;">nɔɪd</a>/,
+EZID /<a href="#" onclick="playAudio('ipa_EZID'); return false;">iːˌziːaɪˌdiː</a>/,
+URL /<a href="#" onclick="playAudio('ipa_URL'); return false;">juːɑːɹɛl</a>/
+<br/>
+\† Not everyone knows that a few years before the web appeared, dozens of
 custom-built state-of-the-art [networked information
 systems](https://datatracker.ietf.org/doc/rfc1402) were emerging at
 universities for the purpose of sharing diverse types of information with
@@ -218,12 +225,10 @@ Minnesota, Gopher was the first CWIS software packaged for easy installation,
 and just as thousands of non-campus sites were adopting it, the WWW software's
 winning hypertext capability overtook it.
 <br/>
-\† <a href="https://www.leskoff.com/s01763-0">IPA</a> pronunciation links 🔊:
-Kunze /<a href="#" onclick="playAudio('ipa_Kunze'); return false;">ˈkʊnziː</a>/,
-Infocal /<a href="#" onclick="playAudio('ipa_Infocal'); return false;">ˈɪnfəʊkæl</a>/,
-Noid /<a href="#" onclick="playAudio('ipa_Noid'); return false;">nɔɪd</a>/,
-EZID /<a href="#" onclick="playAudio('ipa_EZID'); return false;">iːˌziːaɪˌdiː</a>/,
-URL /<a href="#" onclick="playAudio('ipa_URL'); return false;">juːɑːɹɛl</a>/
+\‡ This usage likely comes from the [1993 IETF URI Working Group
+meeting](https://n2t.net/ark:/13960/s2tzhp9p6c1) (p. 556) next to Dublin, Ohio:
+'Tim Berners-Lee, John Kunze and Michael Mealling made presentations as to how
+to handle this "meta data" or ”factoids."'
 <!-- used capyschool.com/en/reader/ for IPA to mp3 file;
      provider Amazon, en-US, type neural, voice Joanna;
      https://www.freeconvert.com/mp3-to-ogg/download for ogg -->
