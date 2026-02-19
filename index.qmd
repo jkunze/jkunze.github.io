@@ -111,35 +111,35 @@ in working with libraries and archives.
 * In 1989 he proposed and began creating UC Berkeley's first Campus Wide
 Information System (CWIS).\† Into that system, called
 [Infocal](https://n2t.net/ark:/13960/s2mr5mfz7g9), he built in pre-web
-hypertext navigation (inspired by "learn" scripts), a custom search engine, and
+hypertext navigation (echoing "learn" scripts), a custom search engine, and
 open access to \(a\) library catalog search via the then-new Z39.50 search and
 retrieval protocol, \(b\) major campus datasets previously available only on
 paper (course catalog, schedule of classes, phone directory, job vacancies),
-and \(c\) the World Wide Web. Interoperation with Z39.50 had never been
-demonstrated previously, requiring a heavy investment in several areas. This
-work included standards development, software development – resulting in the
-release of the first complete open-source client-server codebase – and the
-first true interoperability demonstration, conducted between UC Berkeley, Penn
-State University, and the UC Division of Library Automation.
+and \(c\) the World Wide Web. Z39.50 interoperation had never been done
+previously, requiring heavy investment in several areas. This included
+standards development, software development – resulting in release of the first
+complete open-source client-server codebase – and the first true
+interoperability demonstration, conducted between UC Berkeley, Penn State
+University, and the UC Division of Library Automation.
 
 * As Infocal became web-aware, Kunze began to work with identifier standards.
 In 1994 he declined principal editorship of the URL specification, and instead
 [agreed to write](https://www.ietf.org/proceedings/28.pdf) the functional
 requirements in an attempt to unblock the URL standard, which was at an impasse
 because the average URL link (web address) was seen to break (stop working)
-after about 44 days. His proposed standard permitted URLs to break and was
-published as [RFC1736](https://www.ietf.org/rfc/rfc1736), resulting in the
+after about 100 days. His proposed requirents permitted URLs to break and was
+published as [RFC1736](https://www.ietf.org/rfc/rfc1736), resulting in
 immediate approval of the first URL standard as
 [RFC1738](https://www.ietf.org/rfc/rfc1738). As part of a 3-year fellowship
 at the US National Library of Medicine (NLM), he analyzed the persistent
 identifier landscape and in 2000 defined the framework for the NLM
 multi-dimensional [permanence levels](https://n2t.net/ark:/13960/s2kk13d8kdh).
 
-* To counter the flood of broken URLs, Kunze created the [ARK
-\(Archival Resource Key)](https://n2t.net/ark:/13030/c7n00zt1z) persistent
-identifier scheme in 2001 at the California Digital Library (CDL). With the
-goal of addressing broken links flexibly and affordably while leveraging the
-NLM permanence levels, he evolved the [ARK
+* To deal with broken URLs at the California Digital Library (CDL), Kunze
+created the [ARK \(Archival Resource
+Key)](https://n2t.net/ark:/13030/c7n00zt1z) persistent identifier scheme
+in 2001. With the goal of addressing broken links flexibly and affordably while
+leveraging the NLM permanence levels, he evolved the [ARK
 specification](https://datatracker.ietf.org/doc/draft-kunze-ark/), created the
 ARK resolver and registration infrastructure, and registered the first 600 ARK
 organizations. In 2018 with help from DuraSpace, he led the creation and growth
@@ -153,11 +153,12 @@ South.
 * Motivated by the Unix philosophy favoring simple, extensible tools that
 combine easily and by a distaste for siloed solutions, Kunze developed
 open source tools for ARKs that also work for non-ARK identifiers.
-The Name-to-Thing ([N2T.net](https://n2t.net)) resolver supports hundreds of
+The Name-to-Thing ([N2T.net](https://n2t.net)) resolver supports ARKs as well
+as hundreds of
 [compact identifier schemes](https://doi.org/10.1038/sdata.2018.29), the [EZID
 identifier service](https://www.slideshare.net/slideshow/ezid-easy/9978331)
 supports ARKs and DOIs (URNs, PURLs, and IGSNs were planned), the [Noid (Nice
-Opaque Identifier) Tool](https://metacpan.org/dist/Noid/view/noid) mints
+Opaque Identifier) tool](https://metacpan.org/dist/Noid/view/noid) mints
 billions of ARK and Handle identifiers, and
 [THUMP](https://datatracker.ietf.org/doc/draft-kunze-thump/)
 specifies inflections for ARKs that work with any URL-based identifiers.
@@ -226,9 +227,9 @@ and just as thousands of non-campus sites were adopting it, the WWW software's
 winning hypertext capability overtook it.
 <br/>
 \‡ This usage likely comes from the [1993 IETF URI Working Group
-meeting](https://n2t.net/ark:/13960/s2tzhp9p6c1) (p. 556) next to Dublin, Ohio:
-'Tim Berners-Lee, John Kunze and Michael Mealling made presentations as to how
-to handle this "meta data" or ”factoids."'
+meeting](https://n2t.net/ark:/13960/s2tzhp9p6c1) (p. 556) held 17 miles from
+Dublin, Ohio: 'Tim Berners-Lee, John Kunze and Michael Mealling made
+presentations as to how to handle this "meta data" or ”factoids."'
 <!-- used capyschool.com/en/reader/ for IPA to mp3 file;
      provider Amazon, en-US, type neural, voice Joanna;
      https://www.freeconvert.com/mp3-to-ogg/download for ogg -->
