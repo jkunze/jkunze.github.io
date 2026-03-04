@@ -1,0 +1,153 @@
+---
+title: John Kunze &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="smallcaps">orcid <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a></span>
+---
+
+<span class="small">**Education**</span>
+<br/>
+<span class="small">
+&nbsp;&nbsp; BA (1982) University of California Berkeley, Mathematics and Computer Science
+</span>
+
+<span class="small">**Employment**</span>
+<br/>
+<style>
+/* This targets all tables in the HTML output. Adjust the selector for specific tables */
+table, th, td {
+  border: none !important; /* Forces the removal of all borders */
+  border-collapse: collapse; /* Merges borders (which are now none) */
+  padding: 0;
+  line-height: 1.0;
+}
+
+/* Optional: remove default Quarto row striping */
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: transparent !important;
+}
+</style>
+
+|   |             |
+|---|-------------|
+|7/22 --|Senior Research Associate − Drexel University|
+|1/14 -- 7/22|Identifier Systems Architect − UCOP CDL|
+|1/10 -- 1/14|Associate Director, UC Curation Center − UCOP CDL|
+|2/03 -- 12/09|Preservation Technologies Architect − UCOP CDL|
+|5/01 -- 1/03|Director of Technical Planning, LNTDL − UCSF CKM and UCOP CDL|
+|5/98 -- 4/01|Consultant, Medical Informatics − UCSF CKM and the NLM|
+|10/95 -- 4/98|Manager, Advanced Tech − Center for Knowledge Management, UCSF|
+|8/94 -- 8/95|Lead programmer/researcher − U.S. National Library of Medicine|
+|9/77 -- 9/95|Programmer/architect − University of California Berkeley|
+
+<span class="small">**Technical Contributions**</span>
+
+<span class="small">The first metadata standards: primary author of the Dublin
+Core (DC) metadata specification RFC 5013; founder and chair of the DC Kernel
+Metadata workgroup; chair of the National Information Standards Organization
+committee that moved the DC metadata specification to approval as NISO Z39.85
+(2001); co-author and editor of the original DC metadata specification, RFC
+2413; wrote the spec for encoding Dublin Core in HTML, RFC 2731</span>
+
+<span class="small">URL standards: in the context of the URI working group of
+the IETF, wrote the URL functional requirements in an attempt to unblock the
+URL standard, which was at an impasse because the average URL was seen to break
+after 100 days; the proposed requirements permitted URLs to break and was
+published as RFC1736, resulting in immediate approval of the first URL standard
+as RFC1738; coined the term, URC (originally Uniform Resource Citation); led
+the creation of RFC 2056 describing Z39.50 URLs</span>
+
+<span class="small">Packaging standards: primary author of the
+BagIt packaging format for disk-based or network-based storage and transfer of
+generalized content; co-author of the WARC (Web Archive) file format published
+as ISO 28500:2009; Digital Curation Tools: wrote specs, used in the
+Oxford Common File Layout and HathiTrust, supporting curation and
+preservation as microservices rather than monolithic repository systems:
+Pairtree, Dflat, ReDD, Checkm, Namaste</span>
+
+<span class="small">Dataset and Web Preservation:
+Preservation and Metadata group on a \$20 million NSF DataNet grant; wrote the
+core service vision in a winning \$2 million NDIIPP grant proposal to the
+Library of Congress to create a web preservation service; participated
+centrally in the U.S. National Library of Medicine’s specification of
+permanence levels</span>
+
+<span class="small">ARK Persistent Identifiers:
+created the ARK \(Archival Resource Key\) persistent identifier scheme
+in 2001 to address broken links flexibly and affordably while leveraging the
+NLM permanence levels; evolved the ARK specification, created the ARK resolver
+and registration infrastructure, and registered the first 600 ARK
+organizations; led the creation and growth of the ARK Alliance; by the end of
+2025, there were over 1720 ARK organizations, including 12 national libraries,
+215 universities, 254 archives, 144 museums, 124 journals, and 59 scientific
+centers; the non-paywalled ARK identifier is now vital for open knowledge
+linking across world cultural and scientific institutions, especially in the
+global South; built a generalized identifier minting, binding, and resolving
+system ("noid") and the scheme agnostic Name-To-Thing (N2T) resolver that
+resolves ARKS and hundreds of other identifier schemes
+</span>
+
+<span class="small">Search and Operating Systems: in 1999 wrote a new
+digital library searching and ranking engine for the 40-million-page Legacy
+National Tobacco Documents Library; at UC Berkeley, wrote, and released the
+first complete Z39.50 client and server protocol engine; designed, wrote, and
+maintained UC Berkeley's first campus wide information system (pre-web,
+pre-Gopher); wrote programs in S (precursor of the R language) to summarize and
+plot UNIX 4.2BSD file system kernel traces; wrote software tools that come
+pre-installed on current Mac and Linux systems</span>
+
+<span class="small">**Selected Publications**</span>
+
+<span class="small">*FAIR Metadata: A Community-Driven Vocabulary
+Application,* Christopher B. Rauch, Mat Kelly, John A. Kunze, Jane
+Greenberg, 2022, https://doi.org/10.1007/978-3-030-98876-0_16</span>
+
+<span class="small">*Lost without context: Representing relationships
+between archival materials in the digital environment,* October 2021, book
+chapter, https://doi.org/10.25740/GG453CV6438</span>
+
+<span class="small">*Internet of Samples (iSamples): Toward an
+interdisciplinary cyberinfrastructure for material samples,* Davies, Deck,
+Kansa, Kansa, Kunze, Meyer, Orrell, Ramdeen, Snyder, Vieglais, Walls, Lehnert,
+GigaScience, Volume 10, Issue 5, May 2021, giab028,
+https://doi.org/10.1093/gigascience/giab028</span>
+
+<span class="small">*The BagIt File Packaging Format (V1.0),* Kunze, J.,
+Littman, J., et al. RFC 8493, doi:10.17487/RFC8493, October 2018,
+https://www.rfc-editor.org/info/rfc8493</span>
+
+<span class="small">*Uniform Resolution of Compact Identifiers for
+Biomedical Data,* Wimalaratne, S, Juty, N, Kunze, J. et al. Nature
+Scientific Data. May 2018. https://doi.org/10.1038/sdata.2018.95</span>
+
+<span class="small">*Persistence Statements: Describing Digital
+Stickiness,* Kunze, J. et al. Data Science Journal. 16, p.39, 2017.
+https://doi.org/10.5334/dsj-2017-039</span>
+
+<span class="small">*Community Next Steps for Making Globally Unique
+Identifiers Work for Biocollections Data,* Guralnick, Cellinese, Deck, Pyle,
+Kunze, Penev, Walls, Hagedorn, Agosti, Wieczorek, Catapano, Page. ZooKeys 494:
+133-154 2015. http://doi.org/10.3897/zookeys.494.9352</span>
+
+<span class="small">*DataUp: A tool to help researchers describe and
+share tabular data,* Strasser, Kunze, Abrams, Cruse.
+https://doi.org/10.12688/f1000research.3-6.v2)</span>
+
+<span class="small">*An Emergent Micro-Services Approach to Digital
+Curation Infrastructure,* Abrams, Kunze, Loy, iPRES 2009: the Sixth
+International Conference on Preservation of Digital Objects. Proceedings,
+4-11</span>
+
+<span class="small">*Towards Electronic Persistence Using ARK
+Identifiers,* J. Kunze, Proceedings of the 3rd ECDL Workshop on Web
+Archives, August 2003, https://n2t.net/ark:/13030/c7n00zt1z</span>
+
+<span class="small">*A Metadata Kernel for Electronic Permanence,* J.
+Kunze, Journal of Digital Information, Vol 2, Issue 2, January 2002,
+ISSN 1368-7506, https://n2t.net/ark:/13030/c7rr1pm49</span>
+
+<span class="small">*Common Lisp: the Reference,* Addison-Wesley, 1988
+(899 pages), principal author acknowledgement page xix.
+https://n2t.net/ark:/13960/t68350d1q</span>
+
+<span class="small">*A Trace-Driven Analysis of the UNIX 4.2 BSD File
+System,* J. Ousterhout, H. Da Costa, D. Harrison, J. Kunze, M. Kupfer,
+J. Thompson, Proceedings of the Tenth ACM Symposium on Operating Systems
+Principles, 1985. https://doi.org/10.1145/323647.323631</span>

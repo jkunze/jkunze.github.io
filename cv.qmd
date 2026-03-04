@@ -590,9 +590,7 @@ https://n2t.net/ark:/13030/c7cj87k6m</span>
 
 <span class="small">*DataUp: A tool to help researchers describe and
 share tabular data,* Strasser, Carly, John Kunze, Stephen Abrams,
-Patricia Cruse. \[v1; ref status: approved 1, approved with reservations
-1, http://f1000r.es/2n7\] F1000Research 2014, 3:6 (doi:
-10.12688/f1000research.3-6.v1)</span>
+Patricia Cruse. https://doi.org/10.12688/f1000research.3-6.v2)</span>
 
 <span class="small">*Guidelines on Recommending Data Repositories as
 Partners in Publishing Research Data,* Callaghan, Sarah, Jonathan Tedds,

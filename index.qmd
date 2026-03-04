@@ -19,7 +19,9 @@ title: John Andrew Kunze -- Biography
       3141 Chestnut Street Philadelphia, PA 19104, USA
       <br/>
       <a rel="me" href="cv.html">Curriculum Vitae</a>
-      &nbsp;&nbsp;|&nbsp; 
+      &nbsp;|&nbsp; 
+      <a rel="me" href="cv_short.html">CV</a>
+      &nbsp;|&nbsp; 
       ORCID: <a rel="me" href="https://orcid.org/0000-0001-7604-8041">0000-0001-7604-8041</a>
       <br/>
       Linkedin: <a rel="me" href="https://linkedin.com/in/jakkbl">linkedin.com/in/jakkbl</a>
@@ -127,7 +129,7 @@ In 1994 he declined principal editorship of the URL specification, and instead
 [agreed to write](https://www.ietf.org/proceedings/28.pdf) the functional
 requirements in an attempt to unblock the URL standard, which was at an impasse
 because the average URL link (web address) was seen to break (stop working)
-after about 100 days. His proposed requirents permitted URLs to break and was
+after about 100 days. His proposed requirements permitted URLs to break and was
 published as [RFC1736](https://www.ietf.org/rfc/rfc1736), resulting in
 immediate approval of the first URL standard as
 [RFC1738](https://www.ietf.org/rfc/rfc1738). As part of a 3-year fellowship
