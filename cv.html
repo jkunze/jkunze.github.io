@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a14e3238c51140e99ccc48519b6ed9ce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ff63373b1067ca6f91cf1456aa1f00a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -233,7 +234,7 @@ at CDL, built a generalized identifier minting, binding, and resolving system (â
 <p><span class="small"><em>Community Next Steps for Making Globally Unique Identifiers Work for Biocollections Data,</em> Guralnick, Robert, Nico Cellinese, John Deck, Richard Pyle, John Kunze, Lyubomir Penev, Ramona Walls, Gregor Hagedorn, Donat Agosti, John Wieczorek, Terry Catapano, Roderic Page. ZooKeys 494: 133-154 2015. http://doi.org/10.3897/zookeys.494.9352</span></p>
 <p><span class="small"><em>Kernel Metadata and Electronic Resource Citations (ERCs),</em> Kunze, J; Janee, G; Turner, A. 2014. https://n2t.net/ark:/13030/c7sn0141m</span></p>
 <p><span class="small"><em>The ARK Identifier Scheme: Lessons Learnt at the BnF and Questions Yet Unanswered,</em> Peyrard, SÃƒÂ©bastien, John Kunze, Jean-Philippe Tramoni. DC-2014 â€“ The Austin Proceedings. Oct 2014 https://n2t.net/ark:/13030/c7cj87k6m</span></p>
-<p><span class="small"><em>DataUp: A tool to help researchers describe and share tabular data,</em> Strasser, Carly, John Kunze, Stephen Abrams, Patricia Cruse. [v1; ref status: approved 1, approved with reservations 1, http://f1000r.es/2n7] F1000Research 2014, 3:6 (doi: 10.12688/f1000research.3-6.v1)</span></p>
+<p><span class="small"><em>DataUp: A tool to help researchers describe and share tabular data,</em> Strasser, Carly, John Kunze, Stephen Abrams, Patricia Cruse. https://doi.org/10.12688/f1000research.3-6.v2)</span></p>
 <p><span class="small"><em>Guidelines on Recommending Data Repositories as Partners in Publishing Research Data,</em> Callaghan, Sarah, Jonathan Tedds, John Kunze, et al.&nbsp;IJDC Vol. 9, No.&nbsp;1, pp.&nbsp;152-163, 2014. http://dx.doi.org/10.2218/ijdc.v9i1.309</span></p>
 <p><span class="small"><em>Processes and Procedures for Data Publication: A Case Study in the Geosciences,</em> Sarah Callaghan, Fiona Murphy, Jonathan Tedds, Rob Allan, John Kunze, et al.&nbsp;IJDC Vol 8, No 1, 2013. http://dx.doi.org/10.2218/ijdc.v8i1.253</span></p>
 <p><span class="small"><em>DataONE: Data Observation Network for Earth - Preserving Data and Enabling Innovation in the Biological and Environmental Sciences,</em> Michener, William, Patricia Cruse, John Kunze, at al, D-Lib Magazine, 17:1/2, Jan/Feb 2011. http://www.dlib.org/dlib/january11/michener/01michener.html</span></p>
@@ -330,13 +331,14 @@ at CDL, built a generalized identifier minting, binding, and resolving system (â
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
